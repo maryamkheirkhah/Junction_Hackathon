@@ -1,7 +1,24 @@
-# Junction_Hackathon
-- base on what I understand about what they want in the challenge:
-portal for companies
-1- for them to add Ideas and fedback to Fingrid
-2- answer fedbacks from admin
-3- (optional) they have the profile and user data related to company
-4-(optional) AI bot(Jackob Idea)
+# FinGrid
+
+## Creating and activating .vevn
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## Installing requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+## Example of .env file content
+
+is contained int he example file .env.example
+
+## Running the translataion script
+
+```bash
+python tranlate.py
+```
