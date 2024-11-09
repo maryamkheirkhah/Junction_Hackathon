@@ -4,3 +4,7 @@ pydantic
 openai
 openpyxl
 colorama
+fastapi
+sqlalchemy
+alembic
+uvicorn
