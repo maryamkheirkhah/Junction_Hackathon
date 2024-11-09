@@ -16,9 +16,9 @@ pip install -r requirements.txt
 ## run the app
 
 ```bash
-cd backend/app
+cd backend
 
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 ## Example of .env file content
