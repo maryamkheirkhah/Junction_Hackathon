@@ -297,4 +297,10 @@ def login(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect credentials"
         )
-    return {"message": "Login successful", "user_id": user.id}
+    return {
+        "message": "Login successful", 
+        "user_id": user.user_id,
+        "username": user.username,
+        "role": user.role,
+        "sub_role": user.sub_role
+    }
