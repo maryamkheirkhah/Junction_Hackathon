@@ -1,11 +1,11 @@
-/* import brands from 'assets/images/Brands_Icon.svg';
+/* 
 import users from 'assets/images/user_mng.svg';
 import calendar from 'assets/images/calendar_icon.svg';
 import event_calendar from 'assets/images/event_calendar.svg';
-import Authorization from 'utils/hoc/Authorization'; */
+ */
 // Lazy-loaded components
 
-/* const BrandsList = lazy(() => import('content/BrandsList'));
+/*
 const BrandManage = lazy(() => import('content/BrandManage'));
 const BrandAddEdit = lazy(() => import('content/BrandAddEdit'));
 const BrandEdit = lazy(() => import('content/BrandEdit'));
@@ -15,18 +15,21 @@ const AreaEdit = lazy(() => import('content/AreaEdit'));
 const CalendarView = lazy(() => import('content/CalendarView'));
 const EventsCalendar = lazy(() => import('content/EventsCalendar'));
 const UserManagement = lazy(() => import('content/UserManagement'));
-const AccessDeniedView=lazy(()=>import('content/AccessDeniedView'));
 // Authorization HOCs
 const UserManagementAccess = Authorization(['system_admin', 'user_management']);
 const PrizeListCalendarAccess = Authorization(['analytics_access']);
 const EventsCalendarAccess = Authorization(['events_calendar_access']);
-const BrandsAccess = Authorization(['analytics_access']);
 const BrandAddEditAccess = Authorization(['brands_management']); */
-import React, { Suspense, lazy } from 'react';
-
+import clients from '../assets/images/Brands_Icon.svg';
+import React, { lazy } from 'react';
+import Authorization from '../utils/hoc/Authorization';
 const LoginPanel = lazy(() => import('../content/LoginPanel'));
 const ResetPassword = lazy(() => import('../content/ResetPassword'));
 const AuthenticationTimeout = lazy(() => import('../content/AuthenticationTimeout'));
+const ClientsList = lazy(() => import('../content/ClientsList'));
+const ClientsAccess = Authorization(['analytics_access']);
+const AccessDeniedView=lazy(()=>import('../content/AccessDeniedView'));
+
 // Updated routes array
 const routes = [
   {
@@ -46,7 +49,21 @@ const routes = [
     element: <AuthenticationTimeout />,
     key: 'AuthenticationTimeoutKey',
     noAuth: true
-  }
+  },
+  {
+    path: '/brands',
+    element: <ClientsAccess><ClientsList /></ClientsAccess>,
+    key: 'BrandsListKey',
+    displayName: 'Brands',
+    icon: clients,
+    credentials: ['analytics_access']
+  },
+  {
+    path: '/access_denied',
+    element: <AccessDeniedView />,
+    key: 'AccessDeniedViewKey',
+    noAuth: true
+  },
 ];
 
 export default routes;
@@ -114,10 +131,5 @@ export default routes;
     credentials: ['user_management', 'system_admin']
   },
 
-  {
-    path: '/access_denied',
-    element: <AccessDeniedView />,
-    key: 'AccessDeniedViewKey',
-    noAuth: true
-  }, */
+ */
 

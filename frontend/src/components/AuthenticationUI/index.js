@@ -2,12 +2,11 @@ import React, { useState, Fragment, useEffect } from 'react';
 import styled from 'styled-components';
 //import VersionInfoBox from '../VersionInfoBox';
 import logo from '../../assets/images/logo.png'
-import screen from '../../assets/images/logo.png';
+//import screen from '../../assets/images/gridicon.svg';
 const AuthenticationUI = props => {
   return (
     <Background>
       <Panel>
-        <AppScreen src={screen} alt={'Fingrid'} />
         <FormBox>
           <Logo src={logo} />
           {props.children}
@@ -32,23 +31,12 @@ const FormBox = styled.div`
   }
 `;
 
-const AppScreen = styled.img`
-  grid-column: 1/2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 0 0 10px;
-  //background-image: ${props => props.image && `url(${props.image})`};
-  @media (max-width:1200px){
-    display:none;
-  }
-`;
 
 const Logo = styled.img`
   width: 13.313rem;
   align-self: center;
-  padding-top: 0.8rem;
-  margin-left: 2.8rem;
+  padding-top: 5rem;
+  margin-left: rem;
 `;
 
 const Panel = styled.div`

@@ -1,5 +1,5 @@
 // useDataApi.js
-import { portalClient, authClient } from 'utils/apiClient'; // Assuming these are Axios instances for REST
+import { portalClient, authClient } from '../apiClient'; // Assuming these are Axios instances for REST
 import { useEffect, useReducer, useState } from 'react';
 
 const useDataApi = (initialUrl = '', initialParams = {}, initialData = null) => {
