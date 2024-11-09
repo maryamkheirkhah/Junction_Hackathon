@@ -35,7 +35,7 @@ class Ticket(Base):
     completion_date = Column(DateTime)
     requires_action = Column(Boolean)
     created_by = Column(Integer, ForeignKey("users.user_id"))
-    
+
     # New fields
     planned_release_version = Column(Text)
     resolution_description = Column(Text)
