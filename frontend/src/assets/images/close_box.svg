@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.037" height="10.037" viewBox="0 0 10.037 10.037">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="10.037" height="10.037" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(-5196.981 -1701.981)">
+    <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(5196.981 1701.981)">
+      <g id="Group_40" data-name="Group 40">
+        <g id="Group_39" data-name="Group 39" clip-path="url(#clip-path)">
+          <path id="Path_245" data-name="Path 245" d="M6.675,5.019,9.78,1.914a.878.878,0,0,0,0-1.242L9.366.258a.878.878,0,0,0-1.242,0L5.019,3.363,1.914.257a.878.878,0,0,0-1.242,0L.257.671a.878.878,0,0,0,0,1.242L3.363,5.019.258,8.124a.878.878,0,0,0,0,1.242l.414.414a.878.878,0,0,0,1.242,0L5.019,6.675,8.124,9.78a.878.878,0,0,0,1.242,0l.414-.414a.878.878,0,0,0,0-1.242Z"/>
+        </g>
+      </g>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M5205.7,1712.019a.876.876,0,0,1-.593-.257l-3.1-3.1-3.106,3.1a.877.877,0,0,1-.594.257h-.054a.876.876,0,0,1-.593-.257l-.415-.414a.876.876,0,0,1,0-1.241l3.1-3.1-3.106-3.1a.88.88,0,0,1,0-1.243l.416-.414a.878.878,0,0,1,1.241,0l3.106,3.106,3.1-3.1a.875.875,0,0,1,1.24,0l.414.414a.874.874,0,0,1,.257.593v.054a.879.879,0,0,1-.257.595l-3.1,3.1,3.1,3.1a.877.877,0,0,1,.257.595v.052a.876.876,0,0,1-.257.595l-.414.414a.876.876,0,0,1-.594.257Z" fill="#7687a3"/>
+  </g>
+</svg>
