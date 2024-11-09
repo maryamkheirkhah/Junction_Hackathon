@@ -37,4 +37,4 @@ python tranlate.py
 
 ## Postman endpoints
 
-![alt text](./images/postman.png)
+![alt text](./images/endpoints.png)
