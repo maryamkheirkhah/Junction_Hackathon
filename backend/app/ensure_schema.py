@@ -1,7 +1,7 @@
 import os
 from sqlalchemy import inspect
-from database import engine
-import models
+from app.database import engine
+from app import models
 
 
 def ensure_schema():

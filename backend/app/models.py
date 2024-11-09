@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, Text
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from database import Base
+from app.database import Base
 
 
 class User(Base):
@@ -26,8 +26,8 @@ class Ticket(Base):
     __tablename__ = "tickets"
 
     ticket_id = Column(Integer, primary_key=True)
-    title = Column(Text, nullable=False)
-    description = Column(Text)
+    description = Column(Text, nullable=False)
+    clarification = Column(Text)
     state = Column(Text, nullable=False)
     priority = Column(Integer)
     impact = Column(Text)
@@ -35,6 +35,16 @@ class Ticket(Base):
     completion_date = Column(DateTime)
     requires_action = Column(Boolean)
     created_by = Column(Integer, ForeignKey("users.user_id"))
+    meeting_id = Column(Integer, nullable=True)
+    ticket_title = Column(Text, nullable=True)
+
+    # New fields
+    planned_release_version = Column(Text)
+    resolution_description = Column(Text)
+    recommendation = Column(Text)
+    next_steps = Column(Text)
+    functional_area = Column(Text)
+    product_improvement = Column(Boolean)
 
     # Relationships
     creator = relationship("User", back_populates="tickets")
@@ -52,6 +62,7 @@ class Stage(Base):
     stage_name = Column(Text, nullable=False)
     start_date = Column(DateTime, server_default=func.now())
     end_date = Column(DateTime)
+    status = Column(Text)  # New field for stage recommendations
 
     # Relationships
     ticket = relationship("Ticket", back_populates="stages")

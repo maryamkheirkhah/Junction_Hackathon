@@ -57,3 +57,5 @@ debug.txt
 /local/
 .venv/
 ./.venv
+backend/data/~$english_translation.xlsx
+backend/data/~$Liite 3 Datahub Muutostoiveet 20240816.xlsx
