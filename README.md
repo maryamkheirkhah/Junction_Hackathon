@@ -34,3 +34,7 @@ python tranlate.py
 ### DB schema ERD
 
 ![erd](./images/erd.png)
+
+## Postman endpoints
+
+![alt text](./images/postman.png)

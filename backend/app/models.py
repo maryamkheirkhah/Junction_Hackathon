@@ -35,6 +35,14 @@ class Ticket(Base):
     completion_date = Column(DateTime)
     requires_action = Column(Boolean)
     created_by = Column(Integer, ForeignKey("users.user_id"))
+    
+    # New fields
+    planned_release_version = Column(Text)
+    resolution_description = Column(Text)
+    recommendation = Column(Text)
+    next_steps = Column(Text)
+    functional_area = Column(Text)
+    product_improvement = Column(Boolean)
 
     # Relationships
     creator = relationship("User", back_populates="tickets")
@@ -52,6 +60,7 @@ class Stage(Base):
     stage_name = Column(Text, nullable=False)
     start_date = Column(DateTime, server_default=func.now())
     end_date = Column(DateTime)
+    status = Column(Text)  # New field for stage recommendations
 
     # Relationships
     ticket = relationship("Ticket", back_populates="stages")
