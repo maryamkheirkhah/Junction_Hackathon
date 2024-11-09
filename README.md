@@ -13,24 +13,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Initializing database
+## run the app
 
 ```bash
-alembic init alembic
-```
+cd backend/app
 
-## Manage migrations
-
-### Create a new migration
-
-```bash
-alembic revision --autogenerate -m "Initial schema"
-```
-
-### Apply migrations
-
-```bash
-alembic upgrade head
+uvicorn main:app --reload
 ```
 
 ## Example of .env file content

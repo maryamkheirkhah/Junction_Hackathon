@@ -13,3 +13,7 @@ app = FastAPI()
 @app.on_event("startup")
 async def startup():
     ensure_schema()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
