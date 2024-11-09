@@ -97,4 +97,14 @@ def delete_ticket(db: Session, ticket_id: int):
         db.delete(db_ticket)
         db.commit()
         return True
-    return False 
+    return False
+
+def create_stage(db: Session, stage: schemas.StageCreate):
+    db_stage = models.Stage(**stage.model_dump())
+    db.add(db_stage)
+    db.commit()
+    db.refresh(db_stage)
+    return db_stage
+
+def get_ticket_stages(db: Session, ticket_id: int):
+    return db.query(models.Stage).filter(models.Stage.ticket_id == ticket_id).all() 
