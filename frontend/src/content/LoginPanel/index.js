@@ -221,6 +221,12 @@ const LoginPanel = props => {
             last_name: "User",
             email: values.username,
             organisation_id: "mock_org_id",
+            organisation_name: "Mock Organisation",
+            access_level: 1,
+            access_level_name: "Admin",
+            phone: "1234567890",
+            notifications: { email: true, sms: true },
+            mfa_method: { email: false, sms: false },
           },
         };
   
@@ -229,9 +235,15 @@ const LoginPanel = props => {
         props.login({
           first_name: mockResponse.user_data.first_name,
           last_name: mockResponse.user_data.last_name,
+          phone: mockResponse.user_data.phone,
           email: mockResponse.user_data.email,
           auth_token: mockResponse.auth_token,
+          access_level: mockResponse.user_data.access_level,
+          access_level_name: mockResponse.user_data.access_level_name,
           organisation_id: mockResponse.user_data.organisation_id,
+          organisation_name: mockResponse.user_data.organisation_name,
+          mfa_method: mockResponse.user_data.mfa_method,
+          notifications: mockResponse.user_data.notifications
         });
       } else {
         // Mock failed login
