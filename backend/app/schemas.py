@@ -145,3 +145,17 @@ class Notification(NotificationBase):
 
     class Config:
         from_attributes = True
+
+
+class TicketHistoryBase(BaseModel):
+    ticket_id: int
+    change_type: str  # e.g., "created", "updated", "deleted"
+    changed_fields: dict  # Store the changed fields and their values
+    timestamp: datetime
+
+
+class TicketHistory(TicketHistoryBase):
+    id: int
+    
+    class Config:
+        from_attributes = True
