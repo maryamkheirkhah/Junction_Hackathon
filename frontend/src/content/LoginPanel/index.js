@@ -79,9 +79,10 @@ const LoginPanel = props => {
 
   const login = () => {
     const PATH_BASE = config.AUTH_SERVICE_URL[process.env.REACT_APP_BACKEND];
-    const PATH_CALL = '/user/login';
-    const url = `${PATH_BASE}${PATH_CALL}`;
 
+    const PATH_CALL = '/user/login';
+    //const url = `${PATH_BASE}${PATH_CALL}`;
+    const url = "http://localhost:8000/login";
     let headers = {
       'Access-Control-Origin': '*'
     };
