@@ -1,22 +1,255 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App Container */
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-header {
+/* Button styles */
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Ticket creation section */
+.ticket-creation {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticket-creation input,
+.ticket-creation textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.ticket-creation button {
   background-color: #d4121e;
-  max-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: #1d1919;
+  color: white;
+  transition: transform 0.2s;
 }
 
-.App-link {
-  color: #255bad;
+.ticket-creation button:hover {
+  background-color: #b10e1a;
+  transform: none; /* Removed resizing effect */
+}
+
+/* Sorting and filtering buttons */
+.sorting-filtering {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.sorting button,
+.filtering button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 14px;
+}
+
+.sorting button:hover,
+.filtering button:hover {
+  background-color: #0056b3;
+}
+
+/* Notifications */
+.notifications {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+  z-index: 1000;
+}
+
+.notification {
+  background-color: #f1f1f1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  animation: slide-in 0.5s ease;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Ticket Grid */
+.tickets-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+}
+
+/* Ticket Item */
+.ticket {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  border-left: 5px solid #007bff;
+}
+
+.ticket:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.ticket-id {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.ticket-date {
+  text-align: right;
+  color: #888;
+}
+
+.ticket-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ticket-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 15px;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none; /* Disable resizing of the ticket description */
+}
+
+/* Status Buttons Inside Ticket */
+.status-buttons button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+}
+
+.status-buttons button:nth-child(2) {
+  background-color: #5cb85c;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 20px;
+  max-height: 150px; /* Fix height to avoid layout shifts */
+  overflow-y: auto;
+  display: none;
+}
+
+.comments-section.open {
+  display: block;
+}
+
+.comments-section input {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.comments-section button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments-section button:hover {
+  background-color: #218838;
+}
+
+/* Toggle Comment Section Button */
+.toggle-comments {
+  background-color: #007bff;
+}
+.add-comment-button {
+  margin-top: 20px;
+  background-color: #33a374;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.toggle-comments:hover,
+.add-comment-button:hover {
+  background-color: #0056b3;
 }
