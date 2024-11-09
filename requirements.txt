@@ -1,6 +1,0 @@
-python-dotenv
-pandas
-pydantic
-openai
-openpyxl
-colorama
