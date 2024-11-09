@@ -6,5 +6,4 @@ openpyxl
 colorama
 fastapi
 sqlalchemy
-alembic
 uvicorn

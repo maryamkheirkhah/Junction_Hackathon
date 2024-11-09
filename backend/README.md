@@ -1,3 +1,7 @@
 # Python Backend
-# GraphQL Api
-# MongoDB Database
+
+A simplified FastAPI backend with SQLite database for rapid development.
+
+## Setup
+
+1. Install dependencies:

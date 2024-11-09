@@ -9,6 +9,7 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+
 @app.on_event("startup")
 async def startup():
     ensure_schema()
