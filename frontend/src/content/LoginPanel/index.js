@@ -103,12 +103,13 @@ const LoginPanel = props => {
     setIsInvalidUser(false);
   };
 
-/*   const login = () => {
+  const login = () => {
     const PATH_BASE = config.AUTH_SERVICE_URL[process.env.REACT_APP_BACKEND]; //'http://35.197.224.120:5000';
-
+    console.log('PATH_BASE', PATH_BASE);
     const PATH_CALL = '/user/login';
     const url = `${PATH_BASE}${PATH_CALL}`;
-
+    console.log('url', url);
+    console.log('values', values);
     let headers = {
       'Access-Control-Origin': '*'
     };
@@ -132,6 +133,7 @@ const LoginPanel = props => {
       body: JSON.stringify(payload)
     })
       .then(response => {
+        console.log('response', response);
         return response.json();
       })
       .then(responseData => {
@@ -191,7 +193,7 @@ const LoginPanel = props => {
           return responseData;
         } else {
           setIsLoading(false);
-          setValidatePassword(false);
+          setValidatePassword(false); 
           setNotification({ state: true, message: responseData.message });
           setWarning('INVALID');
         }
@@ -204,9 +206,8 @@ const LoginPanel = props => {
         console.error(error);
       });
   };
- */
-  
-  const login = () => {
+
+/*   const login = () => {
     setIsLoading(true);
   
     // Mocking backend response with a timeout
@@ -251,7 +252,7 @@ const LoginPanel = props => {
         setWarning("INVALID");
       }
     }, 1000); // Simulate network delay of 1 second
-  };
+  }; */
   
   const resetPassword = email => {
     window.sessionStorage.clear();
