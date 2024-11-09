@@ -1,0 +1,1858 @@
+2024-11-09 22:22:31 - INFO - Found 419 tickets to process
+2024-11-09 22:22:31 - INFO - 
+Processing ticket 1...
+2024-11-09 22:22:31 - INFO - Skipping ticket 1: No mention of meeting
+2024-11-09 22:22:31 - INFO - 
+Processing ticket 2...
+2024-11-09 22:22:33 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:33 - INFO - Updated ticket 2:
+State text: Recommendation 1 not ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text contains the word 'meeting' followed by a number in parentheses: (meeting 11). This number, 11, is identified as the meeting ID based on the presence of the keyword 'meeting' and its proximity to the number. No other numbers are present in the text to consider. Therefore, the extracted meeting ID is 11.
+2024-11-09 22:22:33 - INFO - 
+Processing ticket 3...
+2024-11-09 22:22:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:35 - INFO - Updated ticket 3:
+State text: Rejected (meeting 3)
+Meeting ID: 3
+Reasoning: The text includes the phrase 'meeting 3', which indicates a meeting with ID 3. According to the requirement, we should extract this number as it appears right after the word 'meeting' and seems to denote a particular meeting ID.
+2024-11-09 22:22:35 - INFO - 
+Processing ticket 4...
+2024-11-09 22:22:35 - INFO - Skipping ticket 4: No mention of meeting
+2024-11-09 22:22:35 - INFO - 
+Processing ticket 5...
+2024-11-09 22:22:35 - INFO - Skipping ticket 5: No mention of meeting
+2024-11-09 22:22:35 - INFO - 
+Processing ticket 6...
+2024-11-09 22:22:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:37 - INFO - Updated ticket 6:
+State text: Rejected (meeting 3)
+Meeting ID: 3
+Reasoning: The text contains the word 'meeting' followed by the number 3 in parentheses. This suggests that 3 is the meeting ID. Since the task is to extract the meeting ID when present and explicitly mentioned, I extracted the number 3 as the meeting ID.
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 7...
+2024-11-09 22:22:37 - INFO - Skipping ticket 7: No mention of meeting
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 8...
+2024-11-09 22:22:37 - INFO - Skipping ticket 8: No mention of meeting
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 9...
+2024-11-09 22:22:37 - INFO - Skipping ticket 9: No mention of meeting
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 10...
+2024-11-09 22:22:37 - INFO - Skipping ticket 10: No mention of meeting
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 11...
+2024-11-09 22:22:37 - INFO - Skipping ticket 11: No mention of meeting
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 12...
+2024-11-09 22:22:37 - INFO - Skipping ticket 12: No mention of meeting
+2024-11-09 22:22:37 - INFO - 
+Processing ticket 13...
+2024-11-09 22:22:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:38 - INFO - Updated ticket 13:
+State text: Recommendation 1 not ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text mentions the word 'meeting' followed by the number 11 inside parentheses, making it clear that 11 is the meeting ID. No other numbers are present that could serve as potential meeting IDs.
+2024-11-09 22:22:39 - INFO - 
+Processing ticket 14...
+2024-11-09 22:22:39 - INFO - Skipping ticket 14: No mention of meeting
+2024-11-09 22:22:39 - INFO - 
+Processing ticket 15...
+2024-11-09 22:22:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:40 - INFO - Updated ticket 15:
+State text: Rejected (meeting 2)
+Meeting ID: 2
+Reasoning: The text "Rejected (meeting 2)" contains the word 'meeting' followed by the number 2, which is clearly indicated as the meeting ID. There are no other numbers that could represent another meeting ID, so 2 is the extracted meeting ID.
+2024-11-09 22:22:41 - INFO - 
+Processing ticket 16...
+2024-11-09 22:22:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:42 - INFO - Updated ticket 16:
+State text: Rejected (meeting 11)
+Meeting ID: 11
+Reasoning: The text 'Rejected (meeting 11)' contains the word 'meeting' followed by the number '11', which indicates a meeting ID. There are no other numbers in the text, so 11 is clearly the meeting ID to be extracted.
+2024-11-09 22:22:43 - INFO - 
+Processing ticket 17...
+2024-11-09 22:22:44 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:44 - INFO - Updated ticket 17:
+State text: Rejected (meeting 2)
+Meeting ID: 2
+Reasoning: The text contains the word 'meeting' followed by the number 2 in parentheses, which indicates the meeting ID associated with the meeting mentioned. The number is directly associated with the word 'meeting', thus 2 is identified as the meeting ID.
+2024-11-09 22:22:44 - INFO - 
+Processing ticket 18...
+2024-11-09 22:22:45 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:45 - INFO - Updated ticket 18:
+State text: Rejected (meeting 11)
+Meeting ID: 11
+Reasoning: The text contains the word 'meeting' and a number '11' directly following it. According to the requirements, this number is likely the meeting ID. There are no other numbers in the text to suggest an alternative context, so the number provided is extracted as the meeting ID.
+2024-11-09 22:22:46 - INFO - 
+Processing ticket 19...
+2024-11-09 22:22:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:48 - INFO - Updated ticket 19:
+State text: Recommendation 1 ok (meeting 10)
+Meeting ID: 10
+Reasoning: The text contains the word 'meeting' followed by the number 10 in parentheses. This indicates that 10 is the meeting ID as per the context given, and no other numbers are present or relevant as meeting IDs. Therefore, the meeting ID is 10.
+2024-11-09 22:22:48 - INFO - 
+Processing ticket 20...
+2024-11-09 22:22:48 - INFO - Skipping ticket 20: No mention of meeting
+2024-11-09 22:22:48 - INFO - 
+Processing ticket 21...
+2024-11-09 22:22:48 - INFO - Skipping ticket 21: No mention of meeting
+2024-11-09 22:22:48 - INFO - 
+Processing ticket 22...
+2024-11-09 22:22:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:50 - INFO - Updated ticket 22:
+State text: Recommendation 1 ok (meeting 10)
+Meeting ID: 10
+Reasoning: The text 'Recommendation 1 ok (meeting 10)' contains the word 'meeting' followed by the number 10 in parentheses. This indicates that 10 is the meeting ID. There is only one number in the text, and it directly follows the word 'meeting', which is the clear indicator for the meeting ID.
+2024-11-09 22:22:50 - INFO - 
+Processing ticket 23...
+2024-11-09 22:22:50 - INFO - Skipping ticket 23: No mention of meeting
+2024-11-09 22:22:50 - INFO - 
+Processing ticket 24...
+2024-11-09 22:22:50 - INFO - Skipping ticket 24: No mention of meeting
+2024-11-09 22:22:50 - INFO - 
+Processing ticket 25...
+2024-11-09 22:22:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:52 - INFO - Updated ticket 25:
+State text: Recommendation 1 not ok (meeting 3)
+Meeting ID: 3
+Reasoning: The text mentions 'meeting 3', where 'meeting' is clearly followed by the number 3. This context indicates that 3 is the meeting ID. There is no other number present in the text, so 3 is extracted as the meeting ID.
+2024-11-09 22:22:52 - INFO - 
+Processing ticket 26...
+2024-11-09 22:22:52 - INFO - Skipping ticket 26: No mention of meeting
+2024-11-09 22:22:52 - INFO - 
+Processing ticket 27...
+2024-11-09 22:22:52 - INFO - Skipping ticket 27: No mention of meeting
+2024-11-09 22:22:52 - INFO - 
+Processing ticket 28...
+2024-11-09 22:22:54 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:54 - INFO - Updated ticket 28:
+State text: Recommendation 1 ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the phrase '(meeting 12)'. The word 'meeting' is specifically followed by the number 12, indicating that this number is the meeting ID. There are no other numbers in the text that could cause confusion, so the meeting ID is extracted as the number following the word 'meeting', which is 12.
+2024-11-09 22:22:54 - INFO - 
+Processing ticket 29...
+2024-11-09 22:22:54 - INFO - Skipping ticket 29: No mention of meeting
+2024-11-09 22:22:54 - INFO - 
+Processing ticket 30...
+2024-11-09 22:22:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:56 - INFO - Updated ticket 30:
+State text: Recommendation 1 not ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text 'Recommendation 1 not ok (meeting 12)' contains the word 'meeting' followed by the number 12. This context indicates that 12 is being used as a meeting identifier. There are no other numbers present in the text that could serve as a meeting ID, so 12 is extracted as the meeting ID.
+2024-11-09 22:22:56 - INFO - 
+Processing ticket 31...
+2024-11-09 22:22:56 - INFO - Skipping ticket 31: No mention of meeting
+2024-11-09 22:22:56 - INFO - 
+Processing ticket 32...
+2024-11-09 22:22:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:22:58 - INFO - Updated ticket 32:
+State text: Rejected (meeting 11)
+Meeting ID: 11
+Reasoning: The provided text contains the word 'meeting' followed by the number 11. This number is likely intended to be the meeting ID, as per the pattern given in the examples. There are no other numbers to consider, and the context suggests that 11 is directly associated with the word 'meeting'. Therefore, meeting ID is 11.
+2024-11-09 22:22:58 - INFO - 
+Processing ticket 33...
+2024-11-09 22:22:58 - INFO - Skipping ticket 33: No mention of meeting
+2024-11-09 22:22:58 - INFO - 
+Processing ticket 34...
+2024-11-09 22:23:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:00 - INFO - Updated ticket 34:
+State text: Recommendation 1 not okay (meeting 11)
+Meeting ID: 11
+Reasoning: The text contains the phrase '(meeting 11)', where '11' follows the word 'meeting', indicating it is the meeting ID. Despite the presence of another number '1' in the phrase 'Recommendation 1', the number associated with the word 'meeting' is '11', making '11' the meeting ID.
+2024-11-09 22:23:01 - INFO - 
+Processing ticket 35...
+2024-11-09 22:23:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:01 - INFO - Updated ticket 35:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15, which appears to be used as the meeting ID. Therefore, the meeting ID is 15.
+2024-11-09 22:23:02 - INFO - 
+Processing ticket 36...
+2024-11-09 22:23:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:04 - INFO - Updated ticket 36:
+State text: Recommendation 1 not ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text 'Recommendation 1 not ok (meeting 11)' explicitly mentions a 'meeting' with the number '11' in parentheses immediately following the word 'meeting'. Therefore, according to the rules, this number is extracted as the meeting ID. No other numbers are present that could be interpreted as a meeting ID, so 11 is clearly the intended ID in this context.
+2024-11-09 22:23:04 - INFO - 
+Processing ticket 37...
+2024-11-09 22:23:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:05 - INFO - Updated ticket 37:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text "Recommendation 1 ok (meeting 14)" clearly mentions a 'meeting' followed by the number '14'. According to the extraction criteria, this number is considered the meeting ID.
+2024-11-09 22:23:06 - INFO - 
+Processing ticket 38...
+2024-11-09 22:23:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:07 - INFO - Updated ticket 38:
+State text: Recommendation 1 ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text 'Recommendation 1 ok (meeting 11)' contains the word 'meeting' followed by the number 11 in parentheses. According to the criteria, the word 'meeting' and the number following it are indicative of a meeting ID, thus meeting ID is 11.
+2024-11-09 22:23:07 - INFO - 
+Processing ticket 39...
+2024-11-09 22:23:07 - INFO - Skipping ticket 39: No mention of meeting
+2024-11-09 22:23:07 - INFO - 
+Processing ticket 40...
+2024-11-09 22:23:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:09 - INFO - Updated ticket 40:
+State text: Recommendation 1 not okay (meeting 11)
+Meeting ID: 11
+Reasoning: The text 'Recommendation 1 not okay (meeting 11)' clearly contains the word 'meeting' followed by the number '11'. According to the rules, this number is considered a meeting ID. The presence of the word 'meeting' directly before the number identifies it as a meeting ID, despite the presence of another number '1' in the sentence, which does not have the context of a 'meeting'. Therefore, the extracted meeting ID is 11.
+2024-11-09 22:23:10 - INFO - 
+Processing ticket 41...
+2024-11-09 22:23:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:11 - INFO - Updated ticket 41:
+State text: Rejected (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5, which is the ID of the meeting being referenced. Therefore, the meeting ID is 5.
+2024-11-09 22:23:11 - INFO - 
+Processing ticket 42...
+2024-11-09 22:23:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:13 - INFO - Updated ticket 42:
+State text: Rejected (meeting 4)
+Meeting ID: 4
+Reasoning: The text 'Rejected (meeting 4)' contains the word 'meeting' followed by the number 4, indicating that 4 is the meeting ID. There is no other number present to cause confusion, so 4 is clearly the meeting ID.
+2024-11-09 22:23:14 - INFO - 
+Processing ticket 43...
+2024-11-09 22:23:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:15 - INFO - Updated ticket 43:
+State text: Rejected (meeting 2)
+Meeting ID: 2
+Reasoning: The text 'Rejected (meeting 2)' mentions the word 'meeting' followed by the number 2. Based on the provided instructions, this indicates that 2 is the meeting ID. There are no other numbers or additional context that suggests a different interpretation, so 2 is extracted as the meeting ID.
+2024-11-09 22:23:16 - INFO - 
+Processing ticket 44...
+2024-11-09 22:23:16 - INFO - Skipping ticket 44: No mention of meeting
+2024-11-09 22:23:16 - INFO - 
+Processing ticket 45...
+2024-11-09 22:23:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:17 - INFO - Updated ticket 45:
+State text: Recommendation 1 is not ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text "Recommendation 1 is not ok (meeting 11)" contains the word 'meeting' followed by the number 11 in parentheses. This number appears to be a reference to a meeting ID according to the context provided, matching the pattern described in the task. Thus, the meeting ID extracted is 11.
+2024-11-09 22:23:18 - INFO - 
+Processing ticket 46...
+2024-11-09 22:23:18 - INFO - Skipping ticket 46: No mention of meeting
+2024-11-09 22:23:18 - INFO - 
+Processing ticket 47...
+2024-11-09 22:23:18 - INFO - Skipping ticket 47: No mention of meeting
+2024-11-09 22:23:18 - INFO - 
+Processing ticket 48...
+2024-11-09 22:23:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:20 - INFO - Updated ticket 48:
+State text: Recommendation 1 not ok (meeting 6)
+Meeting ID: 6
+Reasoning: The text 'Recommendation 1 not ok (meeting 6)' explicitly mentions a meeting with the identifier 'meeting 6'. The number '6' is directly associated with the word 'meeting', which indicates that '6' is the meeting ID. There are no other numbers in the text that could cause ambiguity, so the meeting ID extracted is 6.
+2024-11-09 22:23:20 - INFO - 
+Processing ticket 49...
+2024-11-09 22:23:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:21 - INFO - Updated ticket 49:
+State text: Recommendation 1 ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number 12 in the context 'meeting 12'. According to the task instructions, this number is likely intended to be a meeting ID. There aren't other numbers present that could be considered meeting IDs. Therefore, the meeting ID extracted is 12.
+2024-11-09 22:23:22 - INFO - 
+Processing ticket 50...
+2024-11-09 22:23:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:23 - INFO - Updated ticket 50:
+State text: Rejected (meeting 11)
+Meeting ID: 11
+Reasoning: The text contains the phrase 'meeting 11', indicating that 11 is associated with a meeting. There is only one number in the text and it directly follows the word 'meeting', suggesting that this number is the meeting ID. Therefore, the meeting ID extracted is 11.
+2024-11-09 22:23:24 - INFO - 
+Processing ticket 51...
+2024-11-09 22:23:24 - INFO - Skipping ticket 51: No mention of meeting
+2024-11-09 22:23:24 - INFO - 
+Processing ticket 52...
+2024-11-09 22:23:24 - INFO - Skipping ticket 52: No mention of meeting
+2024-11-09 22:23:24 - INFO - 
+Processing ticket 53...
+2024-11-09 22:23:24 - INFO - Skipping ticket 53: No mention of meeting
+2024-11-09 22:23:24 - INFO - 
+Processing ticket 54...
+2024-11-09 22:23:24 - INFO - Skipping ticket 54: No mention of meeting
+2024-11-09 22:23:24 - INFO - 
+Processing ticket 55...
+2024-11-09 22:23:24 - INFO - Skipping ticket 55: No mention of meeting
+2024-11-09 22:23:24 - INFO - 
+Processing ticket 56...
+2024-11-09 22:23:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:25 - INFO - Updated ticket 56:
+State text: Recommendation 1 not ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5 within the parentheses. This format suggests that the number 5 is associated with the meeting, indicating it's the meeting ID. The text does not contain any other numbers that could imply an alternate meeting ID. Therefore, 5 is extracted as the meeting ID.
+2024-11-09 22:23:25 - INFO - 
+Processing ticket 57...
+2024-11-09 22:23:27 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:27 - INFO - Updated ticket 57:
+State text: Recommendation 1 not ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the phrase 'meeting 12', which indicates that '12' is being referred to as a meeting ID. There are no other numbers in the text, and the context explicitly associates the number 12 with the word 'meeting', making 12 the meeting ID.
+2024-11-09 22:23:27 - INFO - 
+Processing ticket 58...
+2024-11-09 22:23:27 - INFO - Skipping ticket 58: No mention of meeting
+2024-11-09 22:23:27 - INFO - 
+Processing ticket 59...
+2024-11-09 22:23:27 - INFO - Skipping ticket 59: No mention of meeting
+2024-11-09 22:23:27 - INFO - 
+Processing ticket 60...
+2024-11-09 22:23:28 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:28 - INFO - Updated ticket 60:
+State text: Recommendation 1 not ok (meeting 3)
+Meeting ID: 3
+Reasoning: The text contains the phrase 'meeting 3', where '3' is mentioned directly after the word 'meeting'. This indicates that '3' is the meeting ID, as per the pattern outlined in the instructions, where numbers following the word 'meeting' in such contexts are considered meeting IDs.
+2024-11-09 22:23:29 - INFO - 
+Processing ticket 61...
+2024-11-09 22:23:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:31 - INFO - Updated ticket 61:
+State text: Recommendation 1 ok (meeting 4)
+Meeting ID: 4
+Reasoning: The text contains the word 'meeting' followed by the number 4 in the phrase '(meeting 4)'. According to the rules, if the word 'meeting' is present and followed by a number, that number is extracted as the meeting ID. There is only one such instance in the text, and thus the meeting ID is 4.
+2024-11-09 22:23:31 - INFO - 
+Processing ticket 62...
+2024-11-09 22:23:31 - INFO - Skipping ticket 62: No mention of meeting
+2024-11-09 22:23:31 - INFO - 
+Processing ticket 63...
+2024-11-09 22:23:31 - INFO - Skipping ticket 63: No mention of meeting
+2024-11-09 22:23:31 - INFO - 
+Processing ticket 64...
+2024-11-09 22:23:31 - INFO - Skipping ticket 64: No mention of meeting
+2024-11-09 22:23:31 - INFO - 
+Processing ticket 65...
+2024-11-09 22:23:31 - INFO - Skipping ticket 65: No mention of meeting
+2024-11-09 22:23:31 - INFO - 
+Processing ticket 66...
+2024-11-09 22:23:32 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:32 - INFO - Updated ticket 66:
+State text: Rejected (meeting 4)
+Meeting ID: 4
+Reasoning: The text 'Rejected (meeting 4)' mentions the word 'meeting' followed by the number 4, which clearly appears to be the meeting ID in this context. There are no other numbers present in the text to create ambiguity, so 4 is extracted as the meeting ID.
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 67...
+2024-11-09 22:23:33 - INFO - Skipping ticket 67: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 68...
+2024-11-09 22:23:33 - INFO - Skipping ticket 68: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 69...
+2024-11-09 22:23:33 - INFO - Skipping ticket 69: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 70...
+2024-11-09 22:23:33 - INFO - Skipping ticket 70: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 71...
+2024-11-09 22:23:33 - INFO - Skipping ticket 71: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 72...
+2024-11-09 22:23:33 - INFO - Skipping ticket 72: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 73...
+2024-11-09 22:23:33 - INFO - Skipping ticket 73: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 74...
+2024-11-09 22:23:33 - INFO - Skipping ticket 74: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 75...
+2024-11-09 22:23:33 - INFO - Skipping ticket 75: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 76...
+2024-11-09 22:23:33 - INFO - Skipping ticket 76: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 77...
+2024-11-09 22:23:33 - INFO - Skipping ticket 77: No mention of meeting
+2024-11-09 22:23:33 - INFO - 
+Processing ticket 78...
+2024-11-09 22:23:34 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:34 - INFO - Updated ticket 78:
+State text: Recommendation 1 OK (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in the context 'meeting 14'. This indicates that the number 14 is likely a meeting ID. There are no other competing numbers in the text that could be the meeting ID, reinforcing that 14 is indeed the meeting ID.
+2024-11-09 22:23:34 - INFO - 
+Processing ticket 79...
+2024-11-09 22:23:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:35 - INFO - Updated ticket 79:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14, indicating that this is likely the meeting ID. The structure 'meeting 14' directly follows the pattern described in the examples provided.
+2024-11-09 22:23:36 - INFO - 
+Processing ticket 80...
+2024-11-09 22:23:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:37 - INFO - Updated ticket 80:
+State text: Development proposal, meeting 17?
+Meeting ID: 17
+Reasoning: The text contains the phrase 'meeting 17', which indicates that '17' is the meeting ID. The word 'meeting' is directly followed by the number '17', and there are no other numbers present in the text that could be confused as the meeting ID. Therefore, based on the given criteria, the meeting ID is 17.
+2024-11-09 22:23:38 - INFO - 
+Processing ticket 81...
+2024-11-09 22:23:38 - INFO - Skipping ticket 81: No mention of meeting
+2024-11-09 22:23:38 - INFO - 
+Processing ticket 82...
+2024-11-09 22:23:38 - INFO - Skipping ticket 82: No mention of meeting
+2024-11-09 22:23:38 - INFO - 
+Processing ticket 83...
+2024-11-09 22:23:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:39 - INFO - Updated ticket 83:
+State text: "Development proposal, meeting 16?"
+Meeting ID: 16
+Reasoning: The text "Development proposal, meeting 16?" contains the word 'meeting' followed by the number 16. As there are no other numbers in the context that would suggest multiple options, 16 is considered the meeting ID.
+2024-11-09 22:23:39 - INFO - 
+Processing ticket 84...
+2024-11-09 22:23:41 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:41 - INFO - Updated ticket 84:
+State text: Recommendation 1 not ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the phrase '(meeting 12)', and '12' is the number directly associated with the word 'meeting'. There is no other context or number present to suggest a different interpretation, so 12 is identified as the meeting ID.
+2024-11-09 22:23:41 - INFO - 
+Processing ticket 85...
+2024-11-09 22:23:43 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:43 - INFO - Updated ticket 85:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text 'Rejected (meeting 12)' contains the word 'meeting' followed by the number 12. This number is directly associated with the word 'meeting', indicating that it is the meeting ID. The text is also similar to the example: 'Rejected (meeting 2)' → meeting_id: 2, where the meeting ID was successfully extracted.
+2024-11-09 22:23:43 - INFO - 
+Processing ticket 86...
+2024-11-09 22:23:45 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:45 - INFO - Updated ticket 86:
+State text: Recommendation 1 not okay (meeting 13)
+Meeting ID: 13
+Reasoning: The text 'Recommendation 1 not okay (meeting 13)' mentions the word 'meeting' followed by the number 13 enclosed in parentheses. This indicates that 13 is the meeting ID according to the instructions that if the text contains the word 'meeting' and a number appears to be a meeting ID, we should extract it. There are no other numbers in the text competing for the role of meeting ID, making it straightforward that 13 is indeed the meeting ID.
+2024-11-09 22:23:46 - INFO - 
+Processing ticket 87...
+2024-11-09 22:23:47 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:47 - INFO - Updated ticket 87:
+State text: Recommendation 1 ok (meeting 2)
+Meeting ID: 2
+Reasoning: The text 'Recommendation 1 ok (meeting 2)' contains the word 'meeting' followed by the number '2'. According to the guidelines, the number following the word 'meeting' is considered the meeting ID. Therefore, the extracted meeting ID is 2.
+2024-11-09 22:23:48 - INFO - 
+Processing ticket 88...
+2024-11-09 22:23:48 - INFO - Skipping ticket 88: No mention of meeting
+2024-11-09 22:23:48 - INFO - 
+Processing ticket 89...
+2024-11-09 22:23:48 - INFO - Skipping ticket 89: No mention of meeting
+2024-11-09 22:23:48 - INFO - 
+Processing ticket 90...
+2024-11-09 22:23:48 - INFO - Skipping ticket 90: No mention of meeting
+2024-11-09 22:23:48 - INFO - 
+Processing ticket 91...
+2024-11-09 22:23:49 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:49 - INFO - Updated ticket 91:
+State text: Recommendation 1 ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5 in parentheses, indicating 'meeting 5'. There is only one number present with the word 'meeting', so this is the meeting ID.
+2024-11-09 22:23:49 - INFO - 
+Processing ticket 92...
+2024-11-09 22:23:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:50 - INFO - Updated ticket 92:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15, which indicates that 15 is the meeting ID. The word 'meeting' is directly associated with the number 15, and no other numbers are present, so 15 is extracted as the meeting ID.
+2024-11-09 22:23:51 - INFO - 
+Processing ticket 93...
+2024-11-09 22:23:55 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:55 - INFO - Updated ticket 93:
+State text: Recommendation 1 not ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text "Recommendation 1 not ok (meeting 11)" contains the word 'meeting' followed by the number 11, which is clearly indicated to be the meeting ID. The only other number, 1, does not have context indicating it is related to a meeting, reinforcing that 11 is the correct ID.
+2024-11-09 22:23:55 - INFO - 
+Processing ticket 94...
+2024-11-09 22:23:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:57 - INFO - Updated ticket 94:
+State text: Rejected 1 (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in parentheses. This suggests that 14 is the meeting ID according to the format we are extracting from. The number 1 earlier in the text does not seem to be related to a meeting, as it is placed before 'meeting 14'. Thus, the meeting ID is 14.
+2024-11-09 22:23:57 - INFO - 
+Processing ticket 95...
+2024-11-09 22:23:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:23:58 - INFO - Updated ticket 95:
+State text: Recommendation 1 ok (meeting 10)
+Meeting ID: 10
+Reasoning: The text contains the word 'meeting' followed by the number 10 in parentheses. This suggests that the meeting ID is 10. There are no other numbers in the text, so the number 10 is likely the meeting ID.
+2024-11-09 22:23:59 - INFO - 
+Processing ticket 96...
+2024-11-09 22:24:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:01 - INFO - Updated ticket 96:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number '12'. According to the instructions, if the text contains the word 'meeting' and a number, that number is extracted as the meeting ID, unless context suggests otherwise. In this case, there is no other number or context that would suggest a different interpretation, so '12' is extracted as the meeting ID.
+2024-11-09 22:24:01 - INFO - 
+Processing ticket 97...
+2024-11-09 22:24:01 - INFO - Skipping ticket 97: No mention of meeting
+2024-11-09 22:24:01 - INFO - 
+Processing ticket 98...
+2024-11-09 22:24:01 - INFO - Skipping ticket 98: No mention of meeting
+2024-11-09 22:24:01 - INFO - 
+Processing ticket 99...
+2024-11-09 22:24:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:03 - INFO - Updated ticket 99:
+State text: Recommendation 1 not okay (meeting 13)
+Meeting ID: 13
+Reasoning: The text 'Recommendation 1 not okay (meeting 13)' contains the word 'meeting' followed by the number 13 in parentheses. This strongly indicates that 13 is the meeting ID. There is no other number present in the text that could be confused with a meeting ID. Therefore, the extracted meeting ID is 13.
+2024-11-09 22:24:03 - INFO - 
+Processing ticket 100...
+2024-11-09 22:24:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:04 - INFO - Updated ticket 100:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number 12, which appears to be the meeting ID in this context. There are no other numbers mentioned in the text, so the number following 'meeting' is extracted as the meeting ID.
+2024-11-09 22:24:05 - INFO - 
+Processing ticket 101...
+2024-11-09 22:24:05 - INFO - Skipping ticket 101: No mention of meeting
+2024-11-09 22:24:05 - INFO - 
+Processing ticket 102...
+2024-11-09 22:24:06 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:06 - INFO - Updated ticket 102:
+State text: Recommendation 1 ok (meeting 3)
+Meeting ID: 3
+Reasoning: The text contains the word 'meeting' followed by the number 3 in parentheses, indicating that this number is the meeting ID. There are no other numbers in the text that could be confused as a meeting ID, so the meeting ID extracted is 3.
+2024-11-09 22:24:07 - INFO - 
+Processing ticket 103...
+2024-11-09 22:24:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:08 - INFO - Updated ticket 103:
+State text: Recommendation 1 not okay (meeting 11)
+Meeting ID: 11
+Reasoning: The text "Recommendation 1 not okay (meeting 11)" includes the word 'meeting' followed by the number 11 in parentheses, which appears to refer to a meeting ID. Although both the number 1 and 11 are present, the context clearly specifies 'meeting 11', indicating that 11 is the meeting ID.
+2024-11-09 22:24:09 - INFO - 
+Processing ticket 104...
+2024-11-09 22:24:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:10 - INFO - Updated ticket 104:
+State text: Recommendation 1 not ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text 'Recommendation 1 not ok (meeting 12)' mentions the word 'meeting' followed by the number 12. This clearly indicates that the number 12 is referring to a meeting ID. There are no other numbers in the text that could be considered as a meeting ID, so 12 is extracted as the meeting ID.
+2024-11-09 22:24:11 - INFO - 
+Processing ticket 105...
+2024-11-09 22:24:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:13 - INFO - Updated ticket 105:
+State text: Recommendation 1 not okay (meeting 3)
+Meeting ID: 3
+Reasoning: The text mentions the word 'meeting' immediately followed by the number 3 in the context '(meeting 3)'. Based on the requirements, this context indicates that 3 is the meeting ID. No other competing numbers are present, so 3 is extracted as the meeting ID.
+2024-11-09 22:24:13 - INFO - 
+Processing ticket 106...
+2024-11-09 22:24:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:15 - INFO - Updated ticket 106:
+State text: Recommendation 1 not okay (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number 12 in parentheses, which indicates that 12 is being referred to as a meeting ID. Since 'meeting' is directly associated with this number and there are no other numbers presented as potential meeting IDs, 12 is extracted as the meeting ID.
+2024-11-09 22:24:15 - INFO - 
+Processing ticket 107...
+2024-11-09 22:24:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:17 - INFO - Updated ticket 107:
+State text: Rejected (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number '5', which appears to be the meeting ID. There are no other numbers present in the text, so '5' is identified as the meeting ID.
+2024-11-09 22:24:17 - INFO - 
+Processing ticket 108...
+2024-11-09 22:24:19 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:19 - INFO - Updated ticket 108:
+State text: Recommendation 1 ok (meeting 4)
+Meeting ID: 4
+Reasoning: The text contains the word 'meeting' followed by the number 4 in parentheses, which indicates it is likely a meeting ID. There are no other numbers in the text, so by context, 4 is the meeting ID. Therefore, the meeting ID is 4.
+2024-11-09 22:24:19 - INFO - 
+Processing ticket 109...
+2024-11-09 22:24:19 - INFO - Skipping ticket 109: No mention of meeting
+2024-11-09 22:24:19 - INFO - 
+Processing ticket 110...
+2024-11-09 22:24:19 - INFO - Skipping ticket 110: No mention of meeting
+2024-11-09 22:24:19 - INFO - 
+Processing ticket 111...
+2024-11-09 22:24:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:21 - INFO - Updated ticket 111:
+State text: Development Proposal, Meeting 15
+Meeting ID: 15
+Reasoning: The text 'Development Proposal, Meeting 15' mentions a meeting with a specific number associated with it. The word 'meeting' is followed by the number 15, making it clear that 15 is the meeting ID. There are no other numbers provided in the text to cause confusion, so the meeting ID extracted is 15.
+2024-11-09 22:24:21 - INFO - 
+Processing ticket 112...
+2024-11-09 22:24:21 - INFO - Skipping ticket 112: No mention of meeting
+2024-11-09 22:24:21 - INFO - 
+Processing ticket 113...
+2024-11-09 22:24:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:23 - INFO - Updated ticket 113:
+State text: Recommendation 1 not ok (meeting 3)
+Meeting ID: 3
+Reasoning: The text "Recommendation 1 not ok (meeting 3)" contains the word 'meeting' followed by the number 3 in parentheses. This indicates that 3 is being used as a meeting identifier. Despite the presence of another number, 1, in the phrase "Recommendation 1," it appears to be a label for the recommendation rather than a meeting ID. Therefore, the meeting ID extracted from this text is 3.
+2024-11-09 22:24:23 - INFO - 
+Processing ticket 114...
+2024-11-09 22:24:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:25 - INFO - Updated ticket 114:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text mentions 'meeting 15', and the number following the word 'meeting' is 15. There are no other numbers in the text that could be mistaken for a meeting ID. Therefore, the meeting ID in this context is 15.
+2024-11-09 22:24:25 - INFO - 
+Processing ticket 115...
+2024-11-09 22:24:27 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:27 - INFO - Updated ticket 115:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text mentions a meeting ('meeting 15') and provides a number '15' immediately after it, which is clearly intended to be the meeting ID. There are no other numbers present that could be mistaken for the meeting ID.
+2024-11-09 22:24:27 - INFO - 
+Processing ticket 116...
+2024-11-09 22:24:29 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:29 - INFO - Updated ticket 116:
+State text: Recommendation 1 not ok (meeting 12)
+Meeting ID: 12
+Reasoning: In the provided text, 'Recommendation 1 not ok (meeting 12)', the word 'meeting' is followed by the number 12 in parentheses. This fits the pattern of mentioning a meeting and providing its ID directly after the word 'meeting.' Therefore, the number 12 is extracted as the meeting ID.
+2024-11-09 22:24:29 - INFO - 
+Processing ticket 117...
+2024-11-09 22:24:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:30 - INFO - Updated ticket 117:
+State text: Recommendation 1 ok (meeting 9)
+Meeting ID: 9
+Reasoning: The text explicitly mentions 'meeting 9', indicating that 9 is being referred to as the meeting ID. The format aligns with the pattern identified in the examples where a number following the term 'meeting' is treated as a meeting ID. Therefore, the meeting ID is clearly 9.
+2024-11-09 22:24:31 - INFO - 
+Processing ticket 118...
+2024-11-09 22:24:31 - INFO - Skipping ticket 118: No mention of meeting
+2024-11-09 22:24:31 - INFO - 
+Processing ticket 119...
+2024-11-09 22:24:32 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:32 - INFO - Updated ticket 119:
+State text: Recommendation 1 ok (meeting 3)
+Meeting ID: 3
+Reasoning: The text contains the word 'meeting' followed by the number 3 in parentheses. This suggests that the number 3 is being used as a meeting ID. There are no other numbers in the text, and the context clearly marks this as a meeting ID. Therefore, meeting_id is 3.
+2024-11-09 22:24:33 - INFO - 
+Processing ticket 120...
+2024-11-09 22:24:33 - INFO - Skipping ticket 120: No mention of meeting
+2024-11-09 22:24:33 - INFO - 
+Processing ticket 121...
+2024-11-09 22:24:33 - INFO - Skipping ticket 121: No mention of meeting
+2024-11-09 22:24:33 - INFO - 
+Processing ticket 122...
+2024-11-09 22:24:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:35 - INFO - Updated ticket 122:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text 'Rejected (meeting 12)' contains the word 'meeting' followed by the number 12, which appears to be a meeting ID. According to the guidelines, if the word 'meeting' is followed by a number, that number is considered the meeting ID. Therefore, the meeting ID is 12.
+2024-11-09 22:24:35 - INFO - 
+Processing ticket 123...
+2024-11-09 22:24:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:36 - INFO - Updated ticket 123:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number 12 in parentheses. This pattern suggests that 12 is intended to be the meeting ID. There are no other numbers in the text to consider, so the meeting ID extracted is 12.
+2024-11-09 22:24:37 - INFO - 
+Processing ticket 124...
+2024-11-09 22:24:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:38 - INFO - Updated ticket 124:
+State text: Rejected (meeting 6)
+Meeting ID: 6
+Reasoning: The text "Rejected (meeting 6)" contains the word 'meeting' followed by the number 6, indicating that this number is likely a meeting ID. There are no other numbers present to suggest alternatives.
+2024-11-09 22:24:38 - INFO - 
+Processing ticket 125...
+2024-11-09 22:24:38 - INFO - Skipping ticket 125: No mention of meeting
+2024-11-09 22:24:38 - INFO - 
+Processing ticket 126...
+2024-11-09 22:24:38 - INFO - Skipping ticket 126: No mention of meeting
+2024-11-09 22:24:38 - INFO - 
+Processing ticket 127...
+2024-11-09 22:24:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:40 - INFO - Updated ticket 127:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text 'Recommendation 1 ok (meeting 14)' mentions the word 'meeting' followed by the number 14 in parentheses. This suggests that 14 is the meeting ID. There are no other numbers present, and the context clearly associates the number 14 with the word 'meeting', so the meeting ID is extracted as 14.
+2024-11-09 22:24:41 - INFO - 
+Processing ticket 128...
+2024-11-09 22:24:41 - INFO - Skipping ticket 128: No mention of meeting
+2024-11-09 22:24:41 - INFO - 
+Processing ticket 129...
+2024-11-09 22:24:43 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:43 - INFO - Updated ticket 129:
+State text: Development suggestion, meeting 16?
+Meeting ID: 16
+Reasoning: The text contains the phrase 'meeting 16', where '16' appears immediately after the word 'meeting'. This suggests that '16' is intended to be the meeting ID. No other numbers are present, simplifying the extraction of the meeting ID.
+2024-11-09 22:24:43 - INFO - 
+Processing ticket 130...
+2024-11-09 22:24:43 - INFO - Skipping ticket 130: No mention of meeting
+2024-11-09 22:24:43 - INFO - 
+Processing ticket 131...
+2024-11-09 22:24:43 - INFO - Skipping ticket 131: No mention of meeting
+2024-11-09 22:24:43 - INFO - 
+Processing ticket 132...
+2024-11-09 22:24:45 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:45 - INFO - Updated ticket 132:
+State text: Rejected (meeting 3)
+Meeting ID: 3
+Reasoning: The text contains the word 'meeting' followed by the number 3 in parentheses. According to the logic of extraction, this number is considered the meeting ID because it directly follows the mention of 'meeting'. There are no other numbers in the context to confuse which number is relevant to 'meeting', so 3 is the clear choice for the meeting ID.
+2024-11-09 22:24:45 - INFO - 
+Processing ticket 133...
+2024-11-09 22:24:47 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:47 - INFO - Updated ticket 133:
+State text: Development Proposal, Meeting 16?
+Meeting ID: 16
+Reasoning: The text contains the phrase 'meeting 16', which is a clear indication that '16' is being used as a meeting ID. The instructions specify that if the word 'meeting' is followed by a number, that number is usually the meeting ID. There are no other numbers in the text to create ambiguity. Therefore, the meeting ID is extracted as 16.
+2024-11-09 22:24:48 - INFO - 
+Processing ticket 134...
+2024-11-09 22:24:49 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:49 - INFO - Updated ticket 134:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text states 'meeting 15'. The presence of the word 'meeting' followed by the number '15' indicates that '15' is the meeting ID.
+2024-11-09 22:24:49 - INFO - 
+Processing ticket 135...
+2024-11-09 22:24:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:51 - INFO - Updated ticket 135:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number 12 in parentheses, indicating that this is a meeting ID. The context does not present any other numbers that could be confused as a meeting ID, so the number 12 is identified as the meeting ID to extract.
+2024-11-09 22:24:51 - INFO - 
+Processing ticket 136...
+2024-11-09 22:24:51 - INFO - Skipping ticket 136: No mention of meeting
+2024-11-09 22:24:51 - INFO - 
+Processing ticket 137...
+2024-11-09 22:24:51 - INFO - Skipping ticket 137: No mention of meeting
+2024-11-09 22:24:51 - INFO - 
+Processing ticket 138...
+2024-11-09 22:24:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:52 - INFO - Updated ticket 138:
+State text: Recommendation 1 is not okay (meeting 4)
+Meeting ID: 4
+Reasoning: The text contains the word 'meeting' followed immediately by the number 4 in the phrase '(meeting 4)', which indicates that 4 is the meeting ID. This is consistent with the requirement to extract numbers following the word 'meeting' when they appear together.
+2024-11-09 22:24:53 - INFO - 
+Processing ticket 139...
+2024-11-09 22:24:53 - INFO - Skipping ticket 139: No mention of meeting
+2024-11-09 22:24:53 - INFO - 
+Processing ticket 140...
+2024-11-09 22:24:54 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:54 - INFO - Updated ticket 140:
+State text: Recommendation 1 not okay (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the phrase 'meeting 12' which directly indicates that 12 is the meeting ID. The number 1 in 'Recommendation 1' is not associated with the word 'meeting', so it is not considered a meeting ID. Therefore, 12 is extracted as the meeting ID based on the presence of the word 'meeting' directly linked to this number.
+2024-11-09 22:24:55 - INFO - 
+Processing ticket 141...
+2024-11-09 22:24:55 - INFO - Skipping ticket 141: No mention of meeting
+2024-11-09 22:24:55 - INFO - 
+Processing ticket 142...
+2024-11-09 22:24:55 - INFO - Skipping ticket 142: No mention of meeting
+2024-11-09 22:24:55 - INFO - 
+Processing ticket 143...
+2024-11-09 22:24:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:57 - INFO - Updated ticket 143:
+State text: Recommendation 1 is not okay (meeting 3)
+Meeting ID: 3
+Reasoning: The text "Recommendation 1 is not okay (meeting 3)" contains the word 'meeting' followed by the number 3. According to the rules, if the text contains the word 'meeting' and a number that appears to be a meeting ID, we extract that number. In this case, the number 3 follows 'meeting' directly and is indicated as the meeting ID. Therefore, the meeting ID extracted is 3.
+2024-11-09 22:24:57 - INFO - 
+Processing ticket 144...
+2024-11-09 22:24:57 - INFO - Skipping ticket 144: No mention of meeting
+2024-11-09 22:24:57 - INFO - 
+Processing ticket 145...
+2024-11-09 22:24:57 - INFO - Skipping ticket 145: No mention of meeting
+2024-11-09 22:24:57 - INFO - 
+Processing ticket 146...
+2024-11-09 22:24:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:24:59 - INFO - Updated ticket 146:
+State text: Recommendation 1 ok (meeting 10)
+Meeting ID: 10
+Reasoning: The text contains the word 'meeting' followed by the number 10 in parentheses. This number is explicitly associated with the term 'meeting', which indicates it is the meeting ID as per the instruction to extract numbers that appear after the word 'meeting'. There are no other numbers in the text, making it clear that 10 is the meeting ID.
+2024-11-09 22:24:59 - INFO - 
+Processing ticket 147...
+2024-11-09 22:25:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:00 - INFO - Updated ticket 147:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text mentions 'meeting' followed by the number '12', indicating that '12' is the meeting ID. There are no other numbers present to create confusion, so it is clear that the meeting ID is 12.
+2024-11-09 22:25:01 - INFO - 
+Processing ticket 148...
+2024-11-09 22:25:01 - INFO - Skipping ticket 148: No mention of meeting
+2024-11-09 22:25:01 - INFO - 
+Processing ticket 149...
+2024-11-09 22:25:01 - INFO - Skipping ticket 149: No mention of meeting
+2024-11-09 22:25:01 - INFO - 
+Processing ticket 150...
+2024-11-09 22:25:01 - INFO - Skipping ticket 150: No mention of meeting
+2024-11-09 22:25:01 - INFO - 
+Processing ticket 151...
+2024-11-09 22:25:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:02 - INFO - Updated ticket 151:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text 'Development proposal, meeting 15' contains the word 'meeting' followed by the number 15. Based on the criteria, this is likely the meeting ID. There are no other numbers to consider, so the meeting ID is extracted as 15.
+2024-11-09 22:25:03 - INFO - 
+Processing ticket 152...
+2024-11-09 22:25:03 - INFO - Skipping ticket 152: No mention of meeting
+2024-11-09 22:25:03 - INFO - 
+Processing ticket 153...
+2024-11-09 22:25:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:04 - INFO - Updated ticket 153:
+State text: Recommendation 1 not ok (meeting 13)
+Meeting ID: 13
+Reasoning: The text "Recommendation 1 not ok (meeting 13)" contains the word 'meeting' followed by the number 13, which is in parentheses. This indicates that 13 is a meeting ID associated with the word 'meeting'. No other numbers are present in the text, so 13 is clearly the meeting ID.
+2024-11-09 22:25:04 - INFO - 
+Processing ticket 154...
+2024-11-09 22:25:06 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:06 - INFO - Updated ticket 154:
+State text: Recommendation 1 ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5 in parentheses. This indicates that the number 5 is the meeting ID. There are no other numbers in the text that could be associated with a meeting, so the meeting ID is clearly 5.
+2024-11-09 22:25:06 - INFO - 
+Processing ticket 155...
+2024-11-09 22:25:06 - INFO - Skipping ticket 155: No mention of meeting
+2024-11-09 22:25:06 - INFO - 
+Processing ticket 156...
+2024-11-09 22:25:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:07 - INFO - Updated ticket 156:
+State text: Recommendation 1 not ok (meeting 13)
+Meeting ID: 13
+Reasoning: The text contains the word 'meeting' followed by the number 13. This indicates that 13 is the meeting ID. There are no other numbers present, so it is clear that 13 is the meeting ID in this context.
+2024-11-09 22:25:08 - INFO - 
+Processing ticket 157...
+2024-11-09 22:25:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:09 - INFO - Updated ticket 157:
+State text: Rejected (meeting 3)
+Meeting ID: 3
+Reasoning: The text contains the word 'meeting' followed by the number 3 in the format 'meeting 3'. This number is clearly associated with the word 'meeting', indicating that it is the meeting ID. There are no other numbers present in the text, so there's no ambiguity in determining the meeting ID.
+2024-11-09 22:25:10 - INFO - 
+Processing ticket 158...
+2024-11-09 22:25:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:11 - INFO - Updated ticket 158:
+State text: Recommendation 1 not OK (meeting 12)
+Meeting ID: 12
+Reasoning: The text 'Recommendation 1 not OK (meeting 12)' contains the word 'meeting' followed by the number 12. This number appears to be the meeting ID based on the context of the sentence. There is no other competing number in the text that could be considered a meeting ID.
+2024-11-09 22:25:12 - INFO - 
+Processing ticket 159...
+2024-11-09 22:25:12 - INFO - Skipping ticket 159: No mention of meeting
+2024-11-09 22:25:12 - INFO - 
+Processing ticket 160...
+2024-11-09 22:25:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:13 - INFO - Updated ticket 160:
+State text: Recommendation 1 not okay (meeting 9)
+Meeting ID: 9
+Reasoning: The text explicitly mentions 'meeting' followed by the number 9 in parentheses, which is the format typically used to indicate a meeting ID. There are no other numbers in the text that suggest a different context, so the number 9 is extracted as the meeting ID.
+2024-11-09 22:25:13 - INFO - 
+Processing ticket 161...
+2024-11-09 22:25:13 - INFO - Skipping ticket 161: No mention of meeting
+2024-11-09 22:25:13 - INFO - 
+Processing ticket 162...
+2024-11-09 22:25:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:15 - INFO - Updated ticket 162:
+State text: Recommendation 1 ok (meeting 4)
+Meeting ID: 4
+Reasoning: The text contains the word 'meeting' followed by the number 4 within parentheses: '(meeting 4)'. This suggests that the number 4 is the meeting ID. There is only one number mentioned in conjunction with the word 'meeting', so it is clear that 4 is the intended meeting ID.
+2024-11-09 22:25:16 - INFO - 
+Processing ticket 163...
+2024-11-09 22:25:16 - INFO - Skipping ticket 163: No mention of meeting
+2024-11-09 22:25:16 - INFO - 
+Processing ticket 164...
+2024-11-09 22:25:16 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:16 - INFO - Updated ticket 164:
+State text: Rejected (meeting 9)
+Meeting ID: 9
+Reasoning: The text contains the word 'meeting' followed by the number 9 within parentheses. This indicates that the number 9 is the meeting ID mentioned in this context.
+2024-11-09 22:25:17 - INFO - 
+Processing ticket 165...
+2024-11-09 22:25:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:18 - INFO - Updated ticket 165:
+State text: Recommendation 1 ok (meeting 6)
+Meeting ID: 6
+Reasoning: The text contains the word 'meeting' followed by the number 6 in parentheses. This indicates that 6 is the meeting ID. There are no other numbers provided that could serve as a meeting ID, and the context clearly associates 6 with the term 'meeting'.
+2024-11-09 22:25:19 - INFO - 
+Processing ticket 166...
+2024-11-09 22:25:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:20 - INFO - Updated ticket 166:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text contains the word 'meeting' followed by the number 12 in parentheses, indicating that 12 is the meeting ID.
+2024-11-09 22:25:21 - INFO - 
+Processing ticket 167...
+2024-11-09 22:25:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:22 - INFO - Updated ticket 167:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15. This number appears right after the word 'meeting', indicating that it is likely the meeting ID. There are no other numbers to consider in the text.
+2024-11-09 22:25:22 - INFO - 
+Processing ticket 168...
+2024-11-09 22:25:22 - INFO - Skipping ticket 168: No mention of meeting
+2024-11-09 22:25:22 - INFO - 
+Processing ticket 169...
+2024-11-09 22:25:22 - INFO - Skipping ticket 169: No mention of meeting
+2024-11-09 22:25:22 - INFO - 
+Processing ticket 170...
+2024-11-09 22:25:22 - INFO - Skipping ticket 170: No mention of meeting
+2024-11-09 22:25:22 - INFO - 
+Processing ticket 171...
+2024-11-09 22:25:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:23 - INFO - Updated ticket 171:
+State text: Rejected (meeting 13)
+Meeting ID: 13
+Reasoning: The text contains the word 'meeting' followed by the number 13 in parentheses. According to the extraction criteria, this number is the meeting ID.
+2024-11-09 22:25:23 - INFO - 
+Processing ticket 172...
+2024-11-09 22:25:23 - INFO - Skipping ticket 172: No mention of meeting
+2024-11-09 22:25:23 - INFO - 
+Processing ticket 173...
+2024-11-09 22:25:23 - INFO - Skipping ticket 173: No mention of meeting
+2024-11-09 22:25:23 - INFO - 
+Processing ticket 174...
+2024-11-09 22:25:23 - INFO - Skipping ticket 174: No mention of meeting
+2024-11-09 22:25:23 - INFO - 
+Processing ticket 175...
+2024-11-09 22:25:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:25 - INFO - Updated ticket 175:
+State text: Recommendation 1 ok (meeting 6)
+Meeting ID: 6
+Reasoning: The text contains the word 'meeting' followed by a number in parentheses: '(meeting 6)'. According to the guidelines, this number is extracted as the meeting ID, which is 6.
+2024-11-09 22:25:25 - INFO - 
+Processing ticket 176...
+2024-11-09 22:25:27 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:27 - INFO - Updated ticket 176:
+State text: Recommendation 1 not ok (meeting 7)
+Meeting ID: 7
+Reasoning: The text "Recommendation 1 not ok (meeting 7)" contains the word 'meeting' followed by the number 7 in parentheses. Therefore, 7 is identified as the meeting ID. The text contains only one number associated with the word 'meeting', so it is clear that 7 is the meeting ID.
+2024-11-09 22:25:28 - INFO - 
+Processing ticket 177...
+2024-11-09 22:25:28 - INFO - Skipping ticket 177: No mention of meeting
+2024-11-09 22:25:28 - INFO - 
+Processing ticket 178...
+2024-11-09 22:25:28 - INFO - Skipping ticket 178: No mention of meeting
+2024-11-09 22:25:28 - INFO - 
+Processing ticket 179...
+2024-11-09 22:25:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:31 - INFO - Updated ticket 179:
+State text: Development proposal, meeting 16?
+Meeting ID: 16
+Reasoning: The text contains the word 'meeting' followed by the number '16'. This indicates that '16' is the meeting ID. The number is placed right after the word 'meeting', making it the most likely candidate for the meeting ID.
+2024-11-09 22:25:32 - INFO - 
+Processing ticket 180...
+2024-11-09 22:25:32 - INFO - Skipping ticket 180: No mention of meeting
+2024-11-09 22:25:32 - INFO - 
+Processing ticket 181...
+2024-11-09 22:25:32 - INFO - Skipping ticket 181: No mention of meeting
+2024-11-09 22:25:32 - INFO - 
+Processing ticket 182...
+2024-11-09 22:25:33 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:33 - INFO - Updated ticket 182:
+State text: Recommendation 1 OK (meeting 14)
+Meeting ID: 14
+Reasoning: The text 'Recommendation 1 OK (meeting 14)' contains the word 'meeting' followed by the number 14 in parentheses, indicating that 14 is the meeting ID. There are no other numbers in the text that could be confused with the meeting ID, so 14 is clearly the meeting ID.
+2024-11-09 22:25:34 - INFO - 
+Processing ticket 183...
+2024-11-09 22:25:34 - INFO - Skipping ticket 183: No mention of meeting
+2024-11-09 22:25:34 - INFO - 
+Processing ticket 184...
+2024-11-09 22:25:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:36 - INFO - Updated ticket 184:
+State text: Recommendation 1 ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text "Recommendation 1 ok (meeting 5)" clearly contains the word 'meeting' followed by the number 5 in parentheses. According to the requirement, this number is extracted as the meeting ID because it directly follows the mention of a 'meeting'. There are no other competing numbers in this context that could serve as a meeting ID, thus confirming that 5 is the meeting ID as per the given context and rules.
+2024-11-09 22:25:36 - INFO - 
+Processing ticket 185...
+2024-11-09 22:25:36 - INFO - Skipping ticket 185: No mention of meeting
+2024-11-09 22:25:36 - INFO - 
+Processing ticket 186...
+2024-11-09 22:25:36 - INFO - Skipping ticket 186: No mention of meeting
+2024-11-09 22:25:36 - INFO - 
+Processing ticket 187...
+2024-11-09 22:25:36 - INFO - Skipping ticket 187: No mention of meeting
+2024-11-09 22:25:36 - INFO - 
+Processing ticket 188...
+2024-11-09 22:25:36 - INFO - Skipping ticket 188: No mention of meeting
+2024-11-09 22:25:36 - INFO - 
+Processing ticket 189...
+2024-11-09 22:25:36 - INFO - Skipping ticket 189: No mention of meeting
+2024-11-09 22:25:36 - INFO - 
+Processing ticket 190...
+2024-11-09 22:25:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:37 - INFO - Updated ticket 190:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text 'Development proposal, meeting 15' contains the word 'meeting' followed by the number 15. According to the requirements, when the word 'meeting' is followed by a number, that number is considered the meeting ID. Therefore, the meeting ID extracted from this text is 15.
+2024-11-09 22:25:38 - INFO - 
+Processing ticket 191...
+2024-11-09 22:25:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:39 - INFO - Updated ticket 191:
+State text: Recommendation 1 ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text 'Recommendation 1 ok (meeting 5)' mentions the word 'meeting' followed by the number 5. No other numbers are present in the context of a meeting, so the number 5 is identified as the meeting ID.
+2024-11-09 22:25:40 - INFO - 
+Processing ticket 192...
+2024-11-09 22:25:40 - INFO - Skipping ticket 192: No mention of meeting
+2024-11-09 22:25:40 - INFO - 
+Processing ticket 193...
+2024-11-09 22:25:40 - INFO - Skipping ticket 193: No mention of meeting
+2024-11-09 22:25:40 - INFO - 
+Processing ticket 194...
+2024-11-09 22:25:40 - INFO - Skipping ticket 194: No mention of meeting
+2024-11-09 22:25:40 - INFO - 
+Processing ticket 195...
+2024-11-09 22:25:41 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:41 - INFO - Updated ticket 195:
+State text: Recommendation 1 ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5 in parentheses. This indicates that 5 is the meeting ID.
+2024-11-09 22:25:41 - INFO - 
+Processing ticket 196...
+2024-11-09 22:25:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:42 - INFO - Updated ticket 196:
+State text: Recommendation 1 not ok (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5 in parentheses: '(meeting 5)'. Following the rules provided, 'meeting 5' indicates that 5 is the meeting ID to be extracted.
+2024-11-09 22:25:43 - INFO - 
+Processing ticket 197...
+2024-11-09 22:25:43 - INFO - Skipping ticket 197: No mention of meeting
+2024-11-09 22:25:43 - INFO - 
+Processing ticket 198...
+2024-11-09 22:25:45 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:45 - INFO - Updated ticket 198:
+State text: Rejected (meeting 5)
+Meeting ID: 5
+Reasoning: The text contains the word 'meeting' followed by the number 5 in the format '(meeting 5)'. This indicates that 5 is the meeting ID according to the specified rules. There are no other competing numbers in the text, and the presence of both the keyword 'meeting' and the number 5 clearly marks this as the meeting ID.
+2024-11-09 22:25:45 - INFO - 
+Processing ticket 199...
+2024-11-09 22:25:45 - INFO - Skipping ticket 199: No mention of meeting
+2024-11-09 22:25:45 - INFO - 
+Processing ticket 200...
+2024-11-09 22:25:45 - INFO - Skipping ticket 200: No mention of meeting
+2024-11-09 22:25:45 - INFO - 
+Processing ticket 201...
+2024-11-09 22:25:46 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:46 - INFO - Updated ticket 201:
+State text: Rejected (meeting 10)
+Meeting ID: 10
+Reasoning: The text contains the word 'meeting' followed by the number 10 in parentheses. This fits the pattern where the number following the word 'meeting' appears to be a meeting ID. Therefore, the meeting ID extracted is 10.
+2024-11-09 22:25:47 - INFO - 
+Processing ticket 202...
+2024-11-09 22:25:47 - INFO - Skipping ticket 202: No mention of meeting
+2024-11-09 22:25:47 - INFO - 
+Processing ticket 203...
+2024-11-09 22:25:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:48 - INFO - Updated ticket 203:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15, which appears to be the meeting ID. There is no other number present, and the context suggests that 15 refers directly to the meeting.
+2024-11-09 22:25:48 - INFO - 
+Processing ticket 204...
+2024-11-09 22:25:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:50 - INFO - Updated ticket 204:
+State text: Recommendation 1 not ok (meeting 12)
+Meeting ID: 12
+Reasoning: The text "Recommendation 1 not ok (meeting 12)" contains the word 'meeting' followed by a number in parentheses, which is in the format typically used to denote a meeting ID. The number 12 appears directly after the word 'meeting', suggesting it is the meeting ID. Therefore, the extracted meeting ID is 12.
+2024-11-09 22:25:50 - INFO - 
+Processing ticket 205...
+2024-11-09 22:25:50 - INFO - Skipping ticket 205: No mention of meeting
+2024-11-09 22:25:50 - INFO - 
+Processing ticket 206...
+2024-11-09 22:25:50 - INFO - Skipping ticket 206: No mention of meeting
+2024-11-09 22:25:50 - INFO - 
+Processing ticket 207...
+2024-11-09 22:25:50 - INFO - Skipping ticket 207: No mention of meeting
+2024-11-09 22:25:50 - INFO - 
+Processing ticket 208...
+2024-11-09 22:25:50 - INFO - Skipping ticket 208: No mention of meeting
+2024-11-09 22:25:50 - INFO - 
+Processing ticket 209...
+2024-11-09 22:25:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:52 - INFO - Updated ticket 209:
+State text: Recommendation 1 ok (meeting 6)
+Meeting ID: 6
+Reasoning: The text contains the word 'meeting' followed by the number 6. This fits the pattern where a number immediately following the word 'meeting' is considered the meeting ID. There are no other numbers in the text that could be confused with a meeting ID, and the presence of the word 'meeting' indicates that there is indeed a meeting being referred to. Thus, the meeting ID is 6.
+2024-11-09 22:25:53 - INFO - 
+Processing ticket 210...
+2024-11-09 22:25:53 - INFO - Skipping ticket 210: No mention of meeting
+2024-11-09 22:25:53 - INFO - 
+Processing ticket 211...
+2024-11-09 22:25:53 - INFO - Skipping ticket 211: No mention of meeting
+2024-11-09 22:25:53 - INFO - 
+Processing ticket 212...
+2024-11-09 22:25:54 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:54 - INFO - Updated ticket 212:
+State text: Recommendation 1 not OK (meeting 13)
+Meeting ID: 13
+Reasoning: The text 'Recommendation 1 not OK (meeting 13)' contains the word 'meeting' followed by the number 13. This suggests that 13 is the meeting ID, as per the pattern that identifies meeting IDs in the given examples.
+2024-11-09 22:25:54 - INFO - 
+Processing ticket 213...
+2024-11-09 22:25:54 - INFO - Skipping ticket 213: No mention of meeting
+2024-11-09 22:25:54 - INFO - 
+Processing ticket 214...
+2024-11-09 22:25:55 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:55 - INFO - Updated ticket 214:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text explicitly notes 'meeting 14'. The presence of the word 'meeting' followed by the number '14' indicates that 14 is the meeting ID.
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 215...
+2024-11-09 22:25:56 - INFO - Skipping ticket 215: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 216...
+2024-11-09 22:25:56 - INFO - Skipping ticket 216: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 217...
+2024-11-09 22:25:56 - INFO - Skipping ticket 217: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 218...
+2024-11-09 22:25:56 - INFO - Skipping ticket 218: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 219...
+2024-11-09 22:25:56 - INFO - Skipping ticket 219: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 220...
+2024-11-09 22:25:56 - INFO - Skipping ticket 220: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 221...
+2024-11-09 22:25:56 - INFO - Skipping ticket 221: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 222...
+2024-11-09 22:25:56 - INFO - Skipping ticket 222: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 223...
+2024-11-09 22:25:56 - INFO - Skipping ticket 223: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 224...
+2024-11-09 22:25:56 - INFO - Skipping ticket 224: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 225...
+2024-11-09 22:25:56 - INFO - Skipping ticket 225: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 226...
+2024-11-09 22:25:56 - INFO - Skipping ticket 226: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 227...
+2024-11-09 22:25:56 - INFO - Skipping ticket 227: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 228...
+2024-11-09 22:25:56 - INFO - Skipping ticket 228: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 229...
+2024-11-09 22:25:56 - INFO - Skipping ticket 229: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 230...
+2024-11-09 22:25:56 - INFO - Skipping ticket 230: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 231...
+2024-11-09 22:25:56 - INFO - Skipping ticket 231: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 232...
+2024-11-09 22:25:56 - INFO - Skipping ticket 232: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 233...
+2024-11-09 22:25:56 - INFO - Skipping ticket 233: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 234...
+2024-11-09 22:25:56 - INFO - Skipping ticket 234: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 235...
+2024-11-09 22:25:56 - INFO - Skipping ticket 235: No mention of meeting
+2024-11-09 22:25:56 - INFO - 
+Processing ticket 236...
+2024-11-09 22:25:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:25:58 - INFO - Updated ticket 236:
+State text: Recommendation 1 not ok (meeting 6)
+Meeting ID: 6
+Reasoning: The text 'Recommendation 1 not ok (meeting 6)' contains the word 'meeting' followed by the number '6', which appears to be the meeting ID based on the context provided. There are not multiple numbers which can cause confusion, and '6' directly follows the word 'meeting', suggesting it is indeed the meeting ID. Therefore, I extracted '6' as the meeting ID.
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 237...
+2024-11-09 22:25:58 - INFO - Skipping ticket 237: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 238...
+2024-11-09 22:25:58 - INFO - Skipping ticket 238: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 239...
+2024-11-09 22:25:58 - INFO - Skipping ticket 239: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 240...
+2024-11-09 22:25:58 - INFO - Skipping ticket 240: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 241...
+2024-11-09 22:25:58 - INFO - Skipping ticket 241: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 242...
+2024-11-09 22:25:58 - INFO - Skipping ticket 242: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 243...
+2024-11-09 22:25:58 - INFO - Skipping ticket 243: No mention of meeting
+2024-11-09 22:25:58 - INFO - 
+Processing ticket 244...
+2024-11-09 22:26:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:00 - INFO - Updated ticket 244:
+State text: Recommendation 1 ok (meeting 9)
+Meeting ID: 9
+Reasoning: The text contains the word 'meeting' followed by the number 9 inside parentheses: '(meeting 9)'. Based on the context and the format which matches the examples, the number 9 is the meeting ID. Therefore, I extracted 9 as the meeting ID.
+2024-11-09 22:26:00 - INFO - 
+Processing ticket 245...
+2024-11-09 22:26:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:01 - INFO - Updated ticket 245:
+State text: Development proposal, meeting 16?
+Meeting ID: 16
+Reasoning: The text contains the word 'meeting' followed directly by the number 16, which indicates that it is the meeting ID mentioned in the text. Since the context specifically associates the number 16 with a 'meeting', it is extracted as the meeting ID.
+2024-11-09 22:26:02 - INFO - 
+Processing ticket 246...
+2024-11-09 22:26:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:03 - INFO - Updated ticket 246:
+State text: Recommendation 1 not ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text mentions a 'meeting' in the phrase '(meeting 11)', which follows the word 'meeting'. The number 11 is identified as the meeting ID based on its proximity and direct association with the word 'meeting'. There are no other numbers in the text to cause confusion.
+2024-11-09 22:26:04 - INFO - 
+Processing ticket 247...
+2024-11-09 22:26:06 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:06 - INFO - Updated ticket 247:
+State text: Recommendation 1 ok (meeting 11)
+Meeting ID: 11
+Reasoning: The text 'Recommendation 1 ok (meeting 11)' contains the word 'meeting' followed by a number '11' in parentheses. This indicates that '11' is the meeting ID based on the provided rule to extract the number following the word 'meeting.' There are no other numbers in the text that could be confused as a meeting ID.
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 248...
+2024-11-09 22:26:06 - INFO - Skipping ticket 248: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 249...
+2024-11-09 22:26:06 - INFO - Skipping ticket 249: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 250...
+2024-11-09 22:26:06 - INFO - Skipping ticket 250: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 251...
+2024-11-09 22:26:06 - INFO - Skipping ticket 251: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 252...
+2024-11-09 22:26:06 - INFO - Skipping ticket 252: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 253...
+2024-11-09 22:26:06 - INFO - Skipping ticket 253: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 254...
+2024-11-09 22:26:06 - INFO - Skipping ticket 254: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 255...
+2024-11-09 22:26:06 - INFO - Skipping ticket 255: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 256...
+2024-11-09 22:26:06 - INFO - Skipping ticket 256: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 257...
+2024-11-09 22:26:06 - INFO - Skipping ticket 257: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 258...
+2024-11-09 22:26:06 - INFO - Skipping ticket 258: No mention of meeting
+2024-11-09 22:26:06 - INFO - 
+Processing ticket 259...
+2024-11-09 22:26:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:08 - INFO - Updated ticket 259:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text 'Development proposal, meeting 15' clearly mentions a 'meeting' with the associated number 15. There is no other number in the text, so it's evident that 15 is the meeting ID being referred to.
+2024-11-09 22:26:09 - INFO - 
+Processing ticket 260...
+2024-11-09 22:26:09 - INFO - Skipping ticket 260: No mention of meeting
+2024-11-09 22:26:09 - INFO - 
+Processing ticket 261...
+2024-11-09 22:26:09 - INFO - Skipping ticket 261: No mention of meeting
+2024-11-09 22:26:09 - INFO - 
+Processing ticket 262...
+2024-11-09 22:26:09 - INFO - Skipping ticket 262: No mention of meeting
+2024-11-09 22:26:09 - INFO - 
+Processing ticket 263...
+2024-11-09 22:26:09 - INFO - Skipping ticket 263: No mention of meeting
+2024-11-09 22:26:09 - INFO - 
+Processing ticket 264...
+2024-11-09 22:26:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:10 - INFO - Updated ticket 264:
+State text: Rejected (meeting 12)
+Meeting ID: 12
+Reasoning: The text 'Rejected (meeting 12)' contains the word 'meeting' followed by the number 12. This number appears to be a meeting ID, as it is directly associated with the word 'meeting' in the text. There are no other numbers that could be confused as a meeting ID.
+2024-11-09 22:26:11 - INFO - 
+Processing ticket 265...
+2024-11-09 22:26:12 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:12 - INFO - Updated ticket 265:
+State text: Development suggestion, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15. This suggests that 15 is the meeting ID. No other numbers are present to create ambiguity, so 15 is extracted as the meeting ID.
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 266...
+2024-11-09 22:26:12 - INFO - Skipping ticket 266: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 267...
+2024-11-09 22:26:12 - INFO - Skipping ticket 267: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 268...
+2024-11-09 22:26:12 - INFO - Skipping ticket 268: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 269...
+2024-11-09 22:26:12 - INFO - Skipping ticket 269: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 270...
+2024-11-09 22:26:12 - INFO - Skipping ticket 270: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 271...
+2024-11-09 22:26:12 - INFO - Skipping ticket 271: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 272...
+2024-11-09 22:26:12 - INFO - Skipping ticket 272: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 273...
+2024-11-09 22:26:12 - INFO - Skipping ticket 273: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 274...
+2024-11-09 22:26:12 - INFO - Skipping ticket 274: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 275...
+2024-11-09 22:26:12 - INFO - Skipping ticket 275: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 276...
+2024-11-09 22:26:12 - INFO - Skipping ticket 276: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 277...
+2024-11-09 22:26:12 - INFO - Skipping ticket 277: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 278...
+2024-11-09 22:26:12 - INFO - Skipping ticket 278: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 279...
+2024-11-09 22:26:12 - INFO - Skipping ticket 279: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 280...
+2024-11-09 22:26:12 - INFO - Skipping ticket 280: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 281...
+2024-11-09 22:26:12 - INFO - Skipping ticket 281: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 282...
+2024-11-09 22:26:12 - INFO - Skipping ticket 282: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 283...
+2024-11-09 22:26:12 - INFO - Skipping ticket 283: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 284...
+2024-11-09 22:26:12 - INFO - Skipping ticket 284: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 285...
+2024-11-09 22:26:12 - INFO - Skipping ticket 285: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 286...
+2024-11-09 22:26:12 - INFO - Skipping ticket 286: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 287...
+2024-11-09 22:26:12 - INFO - Skipping ticket 287: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 288...
+2024-11-09 22:26:12 - INFO - Skipping ticket 288: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 289...
+2024-11-09 22:26:12 - INFO - Skipping ticket 289: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 290...
+2024-11-09 22:26:12 - INFO - Skipping ticket 290: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 291...
+2024-11-09 22:26:12 - INFO - Skipping ticket 291: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 292...
+2024-11-09 22:26:12 - INFO - Skipping ticket 292: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 293...
+2024-11-09 22:26:12 - INFO - Skipping ticket 293: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 294...
+2024-11-09 22:26:12 - INFO - Skipping ticket 294: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 295...
+2024-11-09 22:26:12 - INFO - Skipping ticket 295: No mention of meeting
+2024-11-09 22:26:12 - INFO - 
+Processing ticket 296...
+2024-11-09 22:26:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:14 - INFO - Updated ticket 296:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text 'Recommendation 1 ok (meeting 14)' contains the word 'meeting' followed by the number 14 in parentheses, which suggests that 14 is the meeting ID. The context, with the word 'meeting' directly preceding the number 14, supports this interpretation.
+2024-11-09 22:26:14 - INFO - 
+Processing ticket 297...
+2024-11-09 22:26:14 - INFO - Skipping ticket 297: No mention of meeting
+2024-11-09 22:26:14 - INFO - 
+Processing ticket 298...
+2024-11-09 22:26:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:15 - INFO - Updated ticket 298:
+State text: Development proposal, meeting 16?
+Meeting ID: 16
+Reasoning: The text mentions 'meeting' followed by the number 16, which appears to be the meeting ID. No other numbers are present in the text, so it is clear that 16 is the meeting ID.
+2024-11-09 22:26:16 - INFO - 
+Processing ticket 299...
+2024-11-09 22:26:16 - INFO - Skipping ticket 299: No mention of meeting
+2024-11-09 22:26:16 - INFO - 
+Processing ticket 300...
+2024-11-09 22:26:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:17 - INFO - Updated ticket 300:
+State text: Recommendation 1 ok (meeting 9)
+Meeting ID: 9
+Reasoning: The text "Recommendation 1 ok (meeting 9)" contains the word 'meeting' followed by the number 9, which appears to be the meeting ID. There are no other numbers in the text that could be mistaken for a meeting ID, so 9 is extracted as the meeting ID.
+2024-11-09 22:26:17 - INFO - 
+Processing ticket 301...
+2024-11-09 22:26:17 - INFO - Skipping ticket 301: No mention of meeting
+2024-11-09 22:26:17 - INFO - 
+Processing ticket 302...
+2024-11-09 22:26:17 - INFO - Skipping ticket 302: No mention of meeting
+2024-11-09 22:26:17 - INFO - 
+Processing ticket 303...
+2024-11-09 22:26:19 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:19 - INFO - Updated ticket 303:
+State text: Development proposal, meeting 16?
+Meeting ID: 16
+Reasoning: The text explicitly mentions 'meeting' followed by the number 16. Following the instruction to extract the number that appears to be a meeting ID when it is mentioned after the word 'meeting', 16 is identified as the meeting ID. The presence of the question mark does not affect the identification of it as a meeting ID.
+2024-11-09 22:26:19 - INFO - 
+Processing ticket 304...
+2024-11-09 22:26:19 - INFO - Skipping ticket 304: No mention of meeting
+2024-11-09 22:26:19 - INFO - 
+Processing ticket 305...
+2024-11-09 22:26:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:21 - INFO - Updated ticket 305:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text 'Recommendation 1 ok (meeting 14)' contains the word 'meeting' followed by the number 14. This indicates that 14 is the meeting ID. Although there is another number '1' mentioned, it is clearly not related to a meeting, as it is part of 'Recommendation 1'. Therefore, 14 is the meeting ID.
+2024-11-09 22:26:21 - INFO - 
+Processing ticket 306...
+2024-11-09 22:26:21 - INFO - Skipping ticket 306: No mention of meeting
+2024-11-09 22:26:21 - INFO - 
+Processing ticket 307...
+2024-11-09 22:26:21 - INFO - Skipping ticket 307: No mention of meeting
+2024-11-09 22:26:21 - INFO - 
+Processing ticket 308...
+2024-11-09 22:26:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:23 - INFO - Updated ticket 308:
+State text: Rejected (meeting 10)
+Meeting ID: 10
+Reasoning: The text contains the word 'meeting' followed by the number 10 in parentheses. According to the criteria, this number is identified as a meeting ID. Therefore, the extracted meeting ID is 10.
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 309...
+2024-11-09 22:26:24 - INFO - Skipping ticket 309: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 310...
+2024-11-09 22:26:24 - INFO - Skipping ticket 310: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 311...
+2024-11-09 22:26:24 - INFO - Skipping ticket 311: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 312...
+2024-11-09 22:26:24 - INFO - Skipping ticket 312: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 313...
+2024-11-09 22:26:24 - INFO - Skipping ticket 313: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 314...
+2024-11-09 22:26:24 - INFO - Skipping ticket 314: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 315...
+2024-11-09 22:26:24 - INFO - Skipping ticket 315: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 316...
+2024-11-09 22:26:24 - INFO - Skipping ticket 316: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 317...
+2024-11-09 22:26:24 - INFO - Skipping ticket 317: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 318...
+2024-11-09 22:26:24 - INFO - Skipping ticket 318: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 319...
+2024-11-09 22:26:24 - INFO - Skipping ticket 319: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 320...
+2024-11-09 22:26:24 - INFO - Skipping ticket 320: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 321...
+2024-11-09 22:26:24 - INFO - Skipping ticket 321: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 322...
+2024-11-09 22:26:24 - INFO - Skipping ticket 322: No mention of meeting
+2024-11-09 22:26:24 - INFO - 
+Processing ticket 323...
+2024-11-09 22:26:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:25 - INFO - Updated ticket 323:
+State text: Recommendation 1 ok (meeting 9)
+Meeting ID: 9
+Reasoning: The text 'Recommendation 1 ok (meeting 9)' contains the word 'meeting' followed by the number 9, which fits the pattern of a meeting ID. There are no other numbers in the text, so it's clear that 9 is the meeting ID.
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 324...
+2024-11-09 22:26:25 - INFO - Skipping ticket 324: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 325...
+2024-11-09 22:26:25 - INFO - Skipping ticket 325: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 326...
+2024-11-09 22:26:25 - INFO - Skipping ticket 326: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 327...
+2024-11-09 22:26:25 - INFO - Skipping ticket 327: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 328...
+2024-11-09 22:26:25 - INFO - Skipping ticket 328: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 329...
+2024-11-09 22:26:25 - INFO - Skipping ticket 329: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 330...
+2024-11-09 22:26:25 - INFO - Skipping ticket 330: No mention of meeting
+2024-11-09 22:26:25 - INFO - 
+Processing ticket 331...
+2024-11-09 22:26:27 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:27 - INFO - Updated ticket 331:
+State text: Development proposal, meeting 16?
+Meeting ID: 16
+Reasoning: The text 'Development proposal, meeting 16?' contains the word 'meeting' followed by the number 16. There are no other numbers present in the text, and the context suggests that 16 is the meeting ID. Therefore, the meeting ID extracted is 16.
+2024-11-09 22:26:27 - INFO - 
+Processing ticket 332...
+2024-11-09 22:26:27 - INFO - Skipping ticket 332: No mention of meeting
+2024-11-09 22:26:27 - INFO - 
+Processing ticket 333...
+2024-11-09 22:26:29 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:29 - INFO - Updated ticket 333:
+State text: Development proposal, meeting 16?
+Meeting ID: 16
+Reasoning: The text specifically mentions 'meeting 16', where the number 16 follows the word 'meeting', indicating that 16 is the meeting ID. There are no other numbers or conflicting contexts in the text, so 16 is extracted as the meeting ID.
+2024-11-09 22:26:29 - INFO - 
+Processing ticket 334...
+2024-11-09 22:26:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:30 - INFO - Updated ticket 334:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in parentheses. Based on the guidelines, the inclusion of the word 'meeting' along with this number indicates that 14 is intended to be the meeting ID. The context does not suggest any other potential meeting ID numbers.
+2024-11-09 22:26:31 - INFO - 
+Processing ticket 335...
+2024-11-09 22:26:33 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:33 - INFO - Updated ticket 335:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The given text is 'Recommendation 1 ok (meeting 14)'. The text includes the word 'meeting' and the number '14' is associated with it, suggesting it is a meeting ID. There is no other number in the text that could act as a meeting ID. Therefore, the meeting ID extracted is 14.
+2024-11-09 22:26:33 - INFO - 
+Processing ticket 336...
+2024-11-09 22:26:33 - INFO - Skipping ticket 336: No mention of meeting
+2024-11-09 22:26:33 - INFO - 
+Processing ticket 337...
+2024-11-09 22:26:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:35 - INFO - Updated ticket 337:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text "Recommendation 1 ok (meeting 14)" contains the word "meeting" followed by the number 14, which appears to be the meeting ID. There is no other number in the text that could be considered a meeting ID. Therefore, the meeting ID is 14.
+2024-11-09 22:26:35 - INFO - 
+Processing ticket 338...
+2024-11-09 22:26:35 - INFO - Skipping ticket 338: No mention of meeting
+2024-11-09 22:26:35 - INFO - 
+Processing ticket 339...
+2024-11-09 22:26:35 - INFO - Skipping ticket 339: No mention of meeting
+2024-11-09 22:26:35 - INFO - 
+Processing ticket 340...
+2024-11-09 22:26:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:36 - INFO - Updated ticket 340:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by a number 15. This indicates that 15 is the meeting ID according to the guidelines provided.
+2024-11-09 22:26:37 - INFO - 
+Processing ticket 341...
+2024-11-09 22:26:37 - INFO - Skipping ticket 341: No mention of meeting
+2024-11-09 22:26:37 - INFO - 
+Processing ticket 342...
+2024-11-09 22:26:37 - INFO - Skipping ticket 342: No mention of meeting
+2024-11-09 22:26:37 - INFO - 
+Processing ticket 343...
+2024-11-09 22:26:37 - INFO - Skipping ticket 343: No mention of meeting
+2024-11-09 22:26:37 - INFO - 
+Processing ticket 344...
+2024-11-09 22:26:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:38 - INFO - Updated ticket 344:
+State text: Rejected (meeting 10)
+Meeting ID: 10
+Reasoning: The text contains the word 'meeting' followed by the number 10 in parentheses. This fits the pattern where a number immediately following the word 'meeting' is considered a meeting ID. The context does not suggest additional numbers that could be considered, so 10 is extracted as the meeting ID.
+2024-11-09 22:26:39 - INFO - 
+Processing ticket 345...
+2024-11-09 22:26:39 - INFO - Skipping ticket 345: No mention of meeting
+2024-11-09 22:26:39 - INFO - 
+Processing ticket 346...
+2024-11-09 22:26:39 - INFO - Skipping ticket 346: No mention of meeting
+2024-11-09 22:26:39 - INFO - 
+Processing ticket 347...
+2024-11-09 22:26:39 - INFO - Skipping ticket 347: No mention of meeting
+2024-11-09 22:26:39 - INFO - 
+Processing ticket 348...
+2024-11-09 22:26:39 - INFO - Skipping ticket 348: No mention of meeting
+2024-11-09 22:26:39 - INFO - 
+Processing ticket 349...
+2024-11-09 22:26:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:40 - INFO - Updated ticket 349:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text mentions a 'meeting' followed by the number '15'. Since 'meeting 15' is explicitly stated, '15' is extracted as the meeting ID.
+2024-11-09 22:26:41 - INFO - 
+Processing ticket 350...
+2024-11-09 22:26:41 - INFO - Skipping ticket 350: No mention of meeting
+2024-11-09 22:26:41 - INFO - 
+Processing ticket 351...
+2024-11-09 22:26:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:42 - INFO - Updated ticket 351:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text "Recommendation 1 ok (meeting 14)" contains the word 'meeting' followed by the number 14, which appears to be the meeting ID. The context indicates that 14 is the meeting ID because it is directly associated with the word 'meeting' in the text.
+2024-11-09 22:26:42 - INFO - 
+Processing ticket 352...
+2024-11-09 22:26:42 - INFO - Skipping ticket 352: No mention of meeting
+2024-11-09 22:26:42 - INFO - 
+Processing ticket 353...
+2024-11-09 22:26:42 - INFO - Skipping ticket 353: No mention of meeting
+2024-11-09 22:26:42 - INFO - 
+Processing ticket 354...
+2024-11-09 22:26:44 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:44 - INFO - Updated ticket 354:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text does mention the word 'meeting' as 'meeting 14', which indicates that 14 is the meeting ID. It fits the pattern of containing the word 'meeting' followed directly by a number, which is typical for describing a meeting ID.
+2024-11-09 22:26:44 - INFO - 
+Processing ticket 355...
+2024-11-09 22:26:45 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:45 - INFO - Updated ticket 355:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text 'Development proposal, meeting 15' contains the word 'meeting' followed by the number '15'. This is a clear indication that the number 15 is the meeting ID. There are no other numbers in the text that could be confused as a meeting ID.
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 356...
+2024-11-09 22:26:46 - INFO - Skipping ticket 356: No mention of meeting
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 357...
+2024-11-09 22:26:46 - INFO - Skipping ticket 357: No mention of meeting
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 358...
+2024-11-09 22:26:46 - INFO - Skipping ticket 358: No mention of meeting
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 359...
+2024-11-09 22:26:46 - INFO - Skipping ticket 359: No mention of meeting
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 360...
+2024-11-09 22:26:46 - INFO - Skipping ticket 360: No mention of meeting
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 361...
+2024-11-09 22:26:46 - INFO - Skipping ticket 361: No mention of meeting
+2024-11-09 22:26:46 - INFO - 
+Processing ticket 362...
+2024-11-09 22:26:47 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:47 - INFO - Updated ticket 362:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text mentions 'meeting 15'. The number 15 directly follows the word 'meeting', indicating that it is the meeting ID. There are no other numbers in the context, so 15 is extracted as the meeting ID.
+2024-11-09 22:26:48 - INFO - 
+Processing ticket 363...
+2024-11-09 22:26:49 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:49 - INFO - Updated ticket 363:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by a number in parentheses: '(meeting 14)'. This suggests that 14 is the meeting ID. There are no other numbers in the text, so context leads us to conclude that 14 is indeed the meeting ID.
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 364...
+2024-11-09 22:26:49 - INFO - Skipping ticket 364: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 365...
+2024-11-09 22:26:49 - INFO - Skipping ticket 365: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 366...
+2024-11-09 22:26:49 - INFO - Skipping ticket 366: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 367...
+2024-11-09 22:26:49 - INFO - Skipping ticket 367: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 368...
+2024-11-09 22:26:49 - INFO - Skipping ticket 368: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 369...
+2024-11-09 22:26:49 - INFO - Skipping ticket 369: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 370...
+2024-11-09 22:26:49 - INFO - Skipping ticket 370: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 371...
+2024-11-09 22:26:49 - INFO - Skipping ticket 371: No mention of meeting
+2024-11-09 22:26:49 - INFO - 
+Processing ticket 372...
+2024-11-09 22:26:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:50 - INFO - Updated ticket 372:
+State text: Rejected (meeting 11)
+Meeting ID: 11
+Reasoning: The text contains the word 'meeting' followed by the number '11', which is the meeting ID. There are no other numbers present in the text, so '11' is unambiguously the meeting ID for the referenced meeting.
+2024-11-09 22:26:51 - INFO - 
+Processing ticket 373...
+2024-11-09 22:26:51 - INFO - Skipping ticket 373: No mention of meeting
+2024-11-09 22:26:51 - INFO - 
+Processing ticket 374...
+2024-11-09 22:26:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:52 - INFO - Updated ticket 374:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in parentheses, which appears to be the meeting ID according to the context provided. No other numbers or meeting contexts are mentioned, so 14 is the meeting ID.
+2024-11-09 22:26:53 - INFO - 
+Processing ticket 375...
+2024-11-09 22:26:54 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:54 - INFO - Updated ticket 375:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14, which appears to be a meeting ID. There are no other numbers in the text that could serve as potential meeting IDs, so the number 14 after the word 'meeting' is extracted as the meeting ID.
+2024-11-09 22:26:54 - INFO - 
+Processing ticket 376...
+2024-11-09 22:26:54 - INFO - Skipping ticket 376: No mention of meeting
+2024-11-09 22:26:54 - INFO - 
+Processing ticket 377...
+2024-11-09 22:26:54 - INFO - Skipping ticket 377: No mention of meeting
+2024-11-09 22:26:54 - INFO - 
+Processing ticket 378...
+2024-11-09 22:26:54 - INFO - Skipping ticket 378: No mention of meeting
+2024-11-09 22:26:54 - INFO - 
+Processing ticket 379...
+2024-11-09 22:26:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:56 - INFO - Updated ticket 379:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the phrase '(meeting 14)', which indicates that the number 14 is the meeting ID. The presence of the word 'meeting' directly followed by number 14 in parentheses shows that this is the context in which the meeting ID is specified. Therefore, according to the extraction rules, meeting ID: 14 is identified.
+2024-11-09 22:26:56 - INFO - 
+Processing ticket 380...
+2024-11-09 22:26:56 - INFO - Skipping ticket 380: No mention of meeting
+2024-11-09 22:26:56 - INFO - 
+Processing ticket 381...
+2024-11-09 22:26:56 - INFO - Skipping ticket 381: No mention of meeting
+2024-11-09 22:26:56 - INFO - 
+Processing ticket 382...
+2024-11-09 22:26:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:57 - INFO - Updated ticket 382:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed immediately by the number 15, which appears to be the meeting ID based on the context and format provided.
+2024-11-09 22:26:58 - INFO - 
+Processing ticket 383...
+2024-11-09 22:26:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:26:59 - INFO - Updated ticket 383:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15, which appears to be the meeting ID. There is no other number in the text, so 15 is extracted as the meeting ID.
+2024-11-09 22:26:59 - INFO - 
+Processing ticket 384...
+2024-11-09 22:27:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:00 - INFO - Updated ticket 384:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15, which appears to be a meeting ID. There are no other numbers to consider, so the ID is 15.
+2024-11-09 22:27:01 - INFO - 
+Processing ticket 385...
+2024-11-09 22:27:01 - INFO - Skipping ticket 385: No mention of meeting
+2024-11-09 22:27:01 - INFO - 
+Processing ticket 386...
+2024-11-09 22:27:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:02 - INFO - Updated ticket 386:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text includes the word 'meeting' followed by the number 14 in parentheses. This suggests that 14 is the meeting ID associated with the context provided. No other numbers in the text are presented with similar context, thus following the rule of using context to determine the meeting ID, 14 is extracted as the meeting ID.
+2024-11-09 22:27:03 - INFO - 
+Processing ticket 387...
+2024-11-09 22:27:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:04 - INFO - Updated ticket 387:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in parentheses, which indicates that 14 is the meeting ID. There are no other numbers mentioned in the text that could be confused with the meeting ID.
+2024-11-09 22:27:04 - INFO - 
+Processing ticket 388...
+2024-11-09 22:27:04 - INFO - Skipping ticket 388: No mention of meeting
+2024-11-09 22:27:04 - INFO - 
+Processing ticket 389...
+2024-11-09 22:27:04 - INFO - Skipping ticket 389: No mention of meeting
+2024-11-09 22:27:04 - INFO - 
+Processing ticket 390...
+2024-11-09 22:27:04 - INFO - Skipping ticket 390: No mention of meeting
+2024-11-09 22:27:04 - INFO - 
+Processing ticket 391...
+2024-11-09 22:27:04 - INFO - Skipping ticket 391: No mention of meeting
+2024-11-09 22:27:04 - INFO - 
+Processing ticket 392...
+2024-11-09 22:27:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:05 - INFO - Updated ticket 392:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text 'Recommendation 1 ok (meeting 14)' contains the word 'meeting' followed by the number 14. This suggests that 14 is the meeting ID as per the pattern in the examples provided.
+2024-11-09 22:27:06 - INFO - 
+Processing ticket 393...
+2024-11-09 22:27:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:07 - INFO - Updated ticket 393:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text "Development proposal, meeting 15" contains the word "meeting" followed by the number 15. This indicates that 15 is being referred to as the meeting ID. There are no other numbers in the text, so 15 is extracted as the meeting ID.
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 394...
+2024-11-09 22:27:08 - INFO - Skipping ticket 394: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 395...
+2024-11-09 22:27:08 - INFO - Skipping ticket 395: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 396...
+2024-11-09 22:27:08 - INFO - Skipping ticket 396: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 397...
+2024-11-09 22:27:08 - INFO - Skipping ticket 397: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 398...
+2024-11-09 22:27:08 - INFO - Skipping ticket 398: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 399...
+2024-11-09 22:27:08 - INFO - Skipping ticket 399: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 400...
+2024-11-09 22:27:08 - INFO - Skipping ticket 400: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 401...
+2024-11-09 22:27:08 - INFO - Skipping ticket 401: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 402...
+2024-11-09 22:27:08 - INFO - Skipping ticket 402: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 403...
+2024-11-09 22:27:08 - INFO - Skipping ticket 403: No mention of meeting
+2024-11-09 22:27:08 - INFO - 
+Processing ticket 404...
+2024-11-09 22:27:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:10 - INFO - Updated ticket 404:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the phrase '(meeting 14)', which includes the word 'meeting' followed by a number, 14. Based on the guidelines, this number appears to be a meeting ID. There are no other numbers mentioned that could be mistaken for a meeting ID, so 14 is extracted as the meeting ID.
+2024-11-09 22:27:11 - INFO - 
+Processing ticket 405...
+2024-11-09 22:27:12 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:12 - INFO - Updated ticket 405:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in the phrase 'meeting 14', indicating that 14 is the meeting ID.
+2024-11-09 22:27:12 - INFO - 
+Processing ticket 406...
+2024-11-09 22:27:12 - INFO - Skipping ticket 406: No mention of meeting
+2024-11-09 22:27:12 - INFO - 
+Processing ticket 407...
+2024-11-09 22:27:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:13 - INFO - Updated ticket 407:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in parentheses, which strongly indicates that 14 is being used as a meeting ID. There are no other numbers present to suggest any ambiguity, so 14 is extracted as the meeting ID.
+2024-11-09 22:27:14 - INFO - 
+Processing ticket 408...
+2024-11-09 22:27:14 - INFO - Skipping ticket 408: No mention of meeting
+2024-11-09 22:27:14 - INFO - 
+Processing ticket 409...
+2024-11-09 22:27:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:15 - INFO - Updated ticket 409:
+State text: Recommendation 1 ok (meeting 14)
+Meeting ID: 14
+Reasoning: The text contains the word 'meeting' followed by the number 14 in parentheses. There are no other numbers presented as potential meeting IDs. Therefore, 14 is extracted as the meeting ID.
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 410...
+2024-11-09 22:27:15 - INFO - Skipping ticket 410: No mention of meeting
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 411...
+2024-11-09 22:27:15 - INFO - Skipping ticket 411: No mention of meeting
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 412...
+2024-11-09 22:27:15 - INFO - Skipping ticket 412: No mention of meeting
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 413...
+2024-11-09 22:27:15 - INFO - Skipping ticket 413: No mention of meeting
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 414...
+2024-11-09 22:27:15 - INFO - Skipping ticket 414: No mention of meeting
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 415...
+2024-11-09 22:27:15 - INFO - Skipping ticket 415: No mention of meeting
+2024-11-09 22:27:15 - INFO - 
+Processing ticket 416...
+2024-11-09 22:27:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:17 - INFO - Updated ticket 416:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text contains the word 'meeting' followed by the number 15. This number follows directly after the mention of a 'meeting', indicating it is likely the meeting ID. There are no other numbers present in the text, so 15 is extracted as the meeting ID.
+2024-11-09 22:27:17 - INFO - 
+Processing ticket 417...
+2024-11-09 22:27:19 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 22:27:19 - INFO - Updated ticket 417:
+State text: Development proposal, meeting 15
+Meeting ID: 15
+Reasoning: The text 'Development proposal, meeting 15' contains the word 'meeting' followed by the number 15, which appears to be the meeting ID based on the context. There are no other numbers present in the text that could be considered as a meeting ID, so 15 is extracted as the meeting ID.
+2024-11-09 22:27:20 - INFO - 
+Processing ticket 418...
+2024-11-09 22:27:20 - INFO - Skipping ticket 418: No mention of meeting
+2024-11-09 22:27:20 - INFO - 
+Processing ticket 419...
+2024-11-09 22:27:20 - INFO - Skipping ticket 419: No mention of meeting

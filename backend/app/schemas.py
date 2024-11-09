@@ -40,7 +40,12 @@ class TicketBase(BaseModel):
 
 
 class TicketCreate(TicketBase):
-    pass
+    planned_release_version: Optional[str] = None
+    resolution_description: Optional[str] = None
+    recommendation: Optional[str] = None
+    next_steps: Optional[str] = None
+    functional_area: Optional[str] = None
+    product_improvement: Optional[bool] = None
 
 
 class TicketUpdate(BaseModel):
@@ -99,5 +104,58 @@ class Subscription(BaseModel):
     ticket_id: int
     subscribed_at: datetime
 
+    class Config:
+        from_attributes = True
+
+
+class StageBase(BaseModel):
+    stage_name: str
+    status: Optional[str] = None
+
+
+class StageCreate(StageBase):
+    ticket_id: int
+
+
+class Stage(StageBase):
+    stage_id: int
+    ticket_id: int
+    start_date: datetime
+    end_date: Optional[datetime] = None
+
+    class Config:
+        from_attributes = True
+
+
+class NotificationBase(BaseModel):
+    notification_text: str
+
+
+class NotificationCreate(NotificationBase):
+    ticket_id: int
+    user_id: int
+
+
+class Notification(NotificationBase):
+    notification_id: int
+    ticket_id: int
+    user_id: int
+    is_read: bool
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+
+class TicketHistoryBase(BaseModel):
+    ticket_id: int
+    change_type: str  # e.g., "created", "updated", "deleted"
+    changed_fields: dict  # Store the changed fields and their values
+    timestamp: datetime
+
+
+class TicketHistory(TicketHistoryBase):
+    id: int
+    
     class Config:
         from_attributes = True
