@@ -84,11 +84,12 @@ const LoginPanel = props => {
     //const url = `${PATH_BASE}${PATH_CALL}`;
     const url = "http://localhost:8000/login";
     let headers = {
-      'Access-Control-Origin': '*'
+      'Access-Control-Origin': '*',
+      'Content-Type': 'application/json'
     };
 
     let payload = {
-      usernameOrEmail: values.username, // accommodate username or email
+      username: values.username, 
       password: values.password
     };
 
@@ -100,19 +101,12 @@ const LoginPanel = props => {
       .then(response => response.json())
       .then(responseData => {
         if (responseData.status === 'SUCCESS') {
-          // handle success scenario
           props.login({
-            first_name: responseData.data.user_data.first_name,
-            last_name: responseData.data.user_data.last_name,
-            phone: responseData.data.user_data.phone,
-            email: responseData.data.user_data.email,
-            auth_token: responseData.data.auth_token,
-            access_level: responseData.data.user_data.access_level,
-            access_level_name: responseData.data.user_data.access_level_name,
-            organisation_id: responseData.data.user_data.organisation_id,
-            organisation_name: responseData.data.user_data.organisation_name,
-            mfa_method: responseData.data.mfa_method,
-            notifications: responseData.data.notifications
+            message: responseData.message,
+            role: responseData.role,
+            sub_role: responseData.sub_role,
+            user_id: responseData.user_id,
+            username:responseData.username,
           });
         } else {
           setNotification({ state: true, message: responseData.message || 'Login failed' });
