@@ -42,3 +42,7 @@ is contained int he example file .env.example
 ```bash
 python tranlate.py
 ```
+
+### DB schema ERD
+
+![erd](./images/erd.png)
