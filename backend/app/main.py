@@ -1,12 +1,19 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, status, Body
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from datetime import datetime
 from . import crud, models, schemas
 from .database import engine, get_db
+from .ensure_schema import ensure_schema
+from contextlib import asynccontextmanager
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    ensure_schema()
+    yield
+
+app = FastAPI(lifespan=lifespan)
 
 # Add CORS middleware
 app.add_middleware(
@@ -150,9 +157,10 @@ def get_ticket_resolution_times(
 @app.post("/tickets/{ticket_id}/subscribe", response_model=schemas.Subscription)
 def subscribe_to_ticket(
     ticket_id: int,
+    user_id: int,
     db: Session = Depends(get_db)
 ):
-    return crud.create_subscription(db, ticket_id)
+    return crud.create_subscription(db=db, ticket_id=ticket_id, user_id=user_id)
 
 
 @app.delete("/tickets/{ticket_id}/unsubscribe")
@@ -167,9 +175,10 @@ def unsubscribe_from_ticket(
 def create_comment(
     ticket_id: int,
     comment: schemas.CommentCreate,
+    user_id: int,
     db: Session = Depends(get_db)
 ):
-    return crud.create_ticket_comment(db, comment)
+    return crud.create_ticket_comment(db=db, comment=comment, user_id=user_id)
 
 
 @app.get("/tickets/{ticket_id}/comments/", response_model=List[schemas.Comment])
@@ -212,3 +221,80 @@ def get_ticket_history(
     db: Session = Depends(get_db)
 ):
     return crud.get_ticket_history(db, ticket_id)
+
+
+@app.post("/users/", response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    """
+    Create a new user.
+    - Checks for existing email to prevent duplicates
+    - Returns: Created user information
+    """
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail="Email already registered")
+    return crud.create_user(db=db, user=user)
+
+
+@app.get("/users/{user_id}", response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    """
+    Get user details by ID.
+    - Returns: User information or 404 if not found
+    """
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    return db_user
+
+
+@app.get("/tickets/user/{user_id}", response_model=List[schemas.Ticket])
+def read_user_tickets(
+    user_id: int,
+    skip: int = 0,
+    limit: int = 100,
+    db: Session = Depends(get_db)
+):
+    """
+    Get all tickets for a specific user.
+    - Includes pagination support
+    - Returns: List of user's tickets
+    """
+    tickets = crud.get_user_tickets(
+        db, user_id=user_id, skip=skip, limit=limit)
+    return tickets
+
+
+# return hello world on home page
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.post("/login")
+def login(
+    password: str = Body(...),
+    email: str | None = Body(default=None),
+    username: str | None = Body(default=None),
+    db: Session = Depends(get_db)
+):
+    """
+    Simple login endpoint that checks email/username and password
+    """
+    if not email and not username:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Either email or username is required"
+        )
+        
+    user = None
+    if email:
+        user = crud.get_user_by_email(db, email)
+    if username and not user:
+        user = crud.get_user_by_username(db, username)
+        
+    if not user or user.password != password:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect credentials"
+        )
+    return {"message": "Login successful", "user_id": user.id}
