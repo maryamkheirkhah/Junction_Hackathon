@@ -26,8 +26,8 @@ class Ticket(Base):
     __tablename__ = "tickets"
 
     ticket_id = Column(Integer, primary_key=True)
-    title = Column(Text, nullable=False)
-    description = Column(Text)
+    description = Column(Text, nullable=False)
+    clarification = Column(Text)
     state = Column(Text, nullable=False)
     priority = Column(Integer)
     impact = Column(Text)
@@ -35,6 +35,8 @@ class Ticket(Base):
     completion_date = Column(DateTime)
     requires_action = Column(Boolean)
     created_by = Column(Integer, ForeignKey("users.user_id"))
+    meeting_id = Column(Integer, nullable=True)
+    ticket_title = Column(Text, nullable=True)
 
     # New fields
     planned_release_version = Column(Text)

@@ -2,8 +2,10 @@ import pandas as pd
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from datetime import datetime
-from .database import Base, engine
-from .models import Ticket
+from ..app.database import Base, engine
+from ..app.models import Ticket
+
+#### THIS SCRIPT WAS PART OF APP FOLDER BEFORE, PORT BACK BEFORE RUNNING
 
 # Load Excel data
 file_path = './data/english_translation.xlsx'  # Update this path as needed
