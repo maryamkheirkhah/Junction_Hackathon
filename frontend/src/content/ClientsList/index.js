@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import SearchComponent from '../../components/SearchComponent';
 import GridPanel from '../../components/GridPanel';
 import Button from '../../components/Button';
@@ -161,7 +161,7 @@ const DataPanelComp = styled.div`
   max-height: 240px;
   min-width: 180px;
   min-height: 180px;
-  background-color: #ffffff;
+  background-color: white;
   cursor: pointer;
 
   transition: all 0.3s ease-in-out;

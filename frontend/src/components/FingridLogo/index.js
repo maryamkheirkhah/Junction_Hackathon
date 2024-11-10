@@ -1,14 +1,14 @@
 import React from 'react';
-import dibs_logo_onyx from '../../assets/images/logo_onyx.svg';
+import logo from '../../assets/images/logo-footer.svg';
 import styled from 'styled-components';
 
-const SnatchLogo = props => {
+const FingridLogo = props => {
   return <Logo />;
 };
 
-export { SnatchLogo };
+export { FingridLogo };
 
-const Logo = styled.img.attrs(props => ({ src: dibs_logo_onyx }))`
+const Logo = styled.img.attrs(props => ({ src: logo }))`
   display: block;
   overflow: hidden;
   cursor: pointer;

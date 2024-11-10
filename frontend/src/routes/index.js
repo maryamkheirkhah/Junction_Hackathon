@@ -27,6 +27,7 @@ const LoginPanel = lazy(() => import('../content/LoginPanel'));
 const ResetPassword = lazy(() => import('../content/ResetPassword'));
 const AuthenticationTimeout = lazy(() => import('../content/AuthenticationTimeout'));
 const ClientsList = lazy(() => import('../content/ClientsList'));
+const Dashboard = lazy(() => import('../content/Dashboard'));
 const ClientsAccess = Authorization(['analytics_access']);
 const AccessDeniedView=lazy(()=>import('../content/AccessDeniedView'));
 
@@ -34,7 +35,7 @@ const AccessDeniedView=lazy(()=>import('../content/AccessDeniedView'));
 const routes = [
   {
     path: '/login',
-    element: <LoginPanel />,   // Use `element` here
+    element: <LoginPanel />, 
     key: 'LoginPanelKey',
     noAuth: true
   },
@@ -50,13 +51,16 @@ const routes = [
     key: 'AuthenticationTimeoutKey',
     noAuth: true
   },
+  //! need to change to admin only
   {
-    path: '/brands',
+    path: '/clients',
     element: <ClientsAccess><ClientsList /></ClientsAccess>,
-    key: 'BrandsListKey',
-    displayName: 'Brands',
+    key: 'ClientsListKey',
+    displayName: 'Clients',
     icon: clients,
-    credentials: ['analytics_access']
+    credentials: ['admin'],
+    noAuth: false
+
   },
   {
     path: '/access_denied',
@@ -64,6 +68,13 @@ const routes = [
     key: 'AccessDeniedViewKey',
     noAuth: true
   },
+  {
+    path: 'dashboard',
+    element: <Dashboard />,
+    key: 'DashboardKey',
+    displayName: 'Dashboard',
+    noAuth: true
+  }
 ];
 
 export default routes;

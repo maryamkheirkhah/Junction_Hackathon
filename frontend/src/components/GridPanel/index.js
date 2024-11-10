@@ -68,7 +68,7 @@ const Container = styled.div`
   grid-gap: 4vw;
   padding: 0;
 
-  // background-color: #2f3238;
+  //background-color: #2f3238;
   @media (min-width: 2560px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }

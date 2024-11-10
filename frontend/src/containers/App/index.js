@@ -10,7 +10,7 @@ import routes from '../../routes';
 import getAllUrlParams from '../../utils/getAllUrlParams';
 import decodeURIComponentSafe from '../../utils/decodeURIComponentSafe';
 import history from '../../utils/history';
-import { SnatchLogo } from '../../components/SnatchLogo';
+import { FingridLogo } from '../../components/FingridLogo';
 import NavigationBar from '../../components/NavigationBar';
 import Menu from '../../components/Menu';
 import VersionInfo from '../../components/VersionInfo';
@@ -85,7 +85,7 @@ const App = props => {
   }, [user.state.authorized]);
 
   useEffect(() => {
-      if (user.state.authorized && loginToken.current?.auth_token) {
+      if (user.state.authorized/*  && loginToken.current?.auth_token */) {
         getCredentials().then(res => {});
         if (`${history.location.pathname}${history.location.search}` !== navigation.state.current_path) {
           history.push({
@@ -108,6 +108,7 @@ const App = props => {
     const PATH_BASE = config.AUTH_SERVICE_URL[process.env.REACT_APP_BACKEND];
     const PATH_CALL = '/token/get_credentials';
     const url = `${PATH_BASE}${PATH_CALL}`;
+    console.log('<< App >> : < getCredentials > : url : ', url);
     let headers = {
       'Access-Control-Origin': '*',
       Accept: 'application/json',
@@ -343,7 +344,7 @@ const App = props => {
                       setMenuDisplay(!menuDisplay);
                     }}
                   />
-                  <SnatchLogo />
+                  <FingridLogo />
                 </Logo>
               )}
             <Suspense fallback={<div>Loading...</div>}>
@@ -364,7 +365,7 @@ const App = props => {
 
                 {/* Redirect to login if unauthorized */}
                 {!user.state.authorized && (
-                  <Route path="*" element={<Navigate to="/login" replace />} />
+                  <Route path="*" element={<Navigate to="/login" replace />}/>
                 )}
                 </Routes>
                 </Suspense>
@@ -421,7 +422,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 7rem 7rem 1fr;
   grid-template-rows: 3.8rem 1fr;
-  background-color: #000000;
+  background-color: white;
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
