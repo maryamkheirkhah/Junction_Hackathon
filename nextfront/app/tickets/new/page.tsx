@@ -32,34 +32,9 @@ export default function NewTicketPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/tickets`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          priority: parseInt(formData.priority),
-          state: "open",
-        }),
-      });
-
-      if (!response.ok) throw new Error("Failed to create ticket");
-
-      const ticket = await response.json();
-      toast({
-        title: "Success",
-        description: "Ticket created successfully",
-      });
-      router.push(`/tickets/${ticket.ticket_id}`);
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to create ticket",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Store form data in localStorage for the analysis page
+    localStorage.setItem('pendingTicket', JSON.stringify(formData));
+    router.push('/tickets/analysis');
   };
 
   return (
