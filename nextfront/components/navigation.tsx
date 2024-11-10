@@ -6,8 +6,12 @@ import { usePathname, useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+import { ChatDialog } from "./chat-dialog";
+
 
 export default function Navigation() {
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const { toast } = useToast();
@@ -37,7 +41,7 @@ export default function Navigation() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-16 items-center">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
             <div className="font-bold text-xl text-[#D5121E]">Fingrid</div>
@@ -65,6 +69,15 @@ export default function Navigation() {
             </Link>
           </nav>
         </div>
+        <div className="flex-1 flex justify-center">
+          <Button
+            variant="outline"
+            className="w-[200px]"
+            onClick={() => setIsChatOpen(true)}
+          >
+            Ask Anything
+          </Button>
+        </div>
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="icon">
             <Bell className="h-5 w-5 text-[#6D838F]" />
@@ -77,6 +90,7 @@ export default function Navigation() {
           </Button>
         </div>
       </div>
+      <ChatDialog open={isChatOpen} onOpenChange={setIsChatOpen} />
     </header>
   );
 }
