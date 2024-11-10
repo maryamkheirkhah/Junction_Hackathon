@@ -21,7 +21,8 @@ app = FastAPI(lifespan=lifespan)
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Replace * with your frontend URL
+    # Replace * with your frontend URL
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
@@ -31,6 +32,8 @@ app.add_middleware(
 models.Base.metadata.create_all(bind=engine)
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+
+print(os.getenv('OPENAI_API_KEY'))
 
 
 @app.get("/tickets/{ticket_id}", response_model=schemas.Ticket)
@@ -343,7 +346,7 @@ async def chat(
     db: Session = Depends(get_db)
 ):
     tickets = crud.get_tickets(db, skip=0, limit=10)
-    
+
     # Convert tickets to a list of dictionaries using your model's actual fields
     ticket_data = [
         {
@@ -357,9 +360,9 @@ async def chat(
             "raised_date": ticket.raised_date.isoformat() if ticket.raised_date else None
         } for ticket in tickets
     ]
-    
+
     print(ticket_data)
-    
+
     completion = client.chat.completions.create(
         model="gpt-4-0125-preview",
         messages=[
@@ -375,5 +378,5 @@ async def chat(
         temperature=0.7,
         max_tokens=500
     )
-    
+
     return {"response": completion.choices[0].message.content}

@@ -80,3 +80,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+[data-overlay-style="chat"] {
+  background-color: transparent !important;
+}
+
+[data-overlay-style="chat"] + [role="dialog"] {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
