@@ -146,13 +146,13 @@ export function TicketDetail({ initialTicket }: TicketDetailProps) {
               <Badge
                 className={cn(
                   "capitalize",
-                  ticket.state === "open" && "bg-[#D5121E]",
-                  ticket.state === "in_progress" && "bg-[#A15885]",
-                  ticket.state === "resolved" && "bg-[#4d9d88]",
-                  ticket.state === "rejected" && "bg-[#6D838F]"
+                  ticket?.state === "open" && "bg-[#D5121E]",
+                  ticket?.state === "in_progress" && "bg-[#A15885]",
+                  ticket?.state === "resolved" && "bg-[#4d9d88]",
+                  ticket?.state === "rejected" && "bg-[#6D838F]"
                 )}
               >
-                {ticket.state.replace("_", " ")}
+                {ticket?.state?.replace("_", " ") || "Unknown"}
               </Badge>
             </div>
             <div className="flex justify-between items-center">
