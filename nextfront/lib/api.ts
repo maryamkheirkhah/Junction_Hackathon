@@ -13,3 +13,30 @@ export async function login(email: string, password: string) {
 
   return response.json();
 }
+
+export async function getRecentTickets(limit: number = 5) {
+  const response = await fetch(`${API_URL}/tickets?limit=${limit}`, {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch recent tickets");
+  }
+
+  return response.json();
+}
+
+export async function getTickets(page: number = 1, limit: number = 10) {
+  const skip = (page - 1) * limit;
+  const response = await fetch(`${API_URL}/tickets?skip=${skip}&limit=${limit}`, {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch tickets");
+  }
+
+  return response.json();
+}
