@@ -1,13 +1,13 @@
 const loginToken = {
   get current() {
     let object = null;
-    let token = window.localStorage.getItem('snatchLoginToken');
+    let token = window.localStorage.getItem('UserLoginToken');
     if (token) object = JSON.parse(token);
     return object;
   },
   set current(object) {
-    if (object != null) window.localStorage.setItem('snatchLoginToken', JSON.stringify(object));
-    else window.localStorage.removeItem('snatchLoginToken');
+    if (object != null) window.localStorage.setItem('UserLoginToken', JSON.stringify(object));
+    else window.localStorage.removeItem('UserLoginToken');
   }
 };
 

@@ -9,7 +9,7 @@ const handleError = (error) => {
   if (status === 401) {
     window.location.href = '/access_denied';
   } else if (status === 419) {
-    localStorage.removeItem('snatchLoginToken');
+    localStorage.removeItem('UserLoginToken');
     window.location.href = '/authentication_timeout';
   }
   return Promise.reject(error);

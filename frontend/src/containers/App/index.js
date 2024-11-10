@@ -43,8 +43,18 @@ const App = props => {
       window.scrollTo(0, 0);
     });
     console.log('loginToken.current', loginToken.current);
-    if (loginToken.current && loginToken.current.auth_token && !user.state.authorized && loginToken.current.user_data) {
+    if (loginToken.current) {
       console.log('<< App >> : < useEffect > : user.state.authorized : ', user.state.authorized);
+      login(
+        {
+            message: loginToken.message,
+            role: loginToken.role,
+            sub_role: loginToken.sub_role,
+            user_id: loginToken.user_id,
+            username: loginToken.username,
+            timestamp: new Date().getTime()
+          }
+      );
     } else {
       navigateTo('/login/');
        history.push({
@@ -361,7 +371,7 @@ const App = props => {
 
             </Fragment>
           </Router>
-          {user.state.authorized && !history.location.pathname.startsWith('/authentication_timeout') && <VersionInfo version={config.VERSION} />}
+          {user.state.authorized && !history.location.pathname.startsWith('/authentication_timeout') /* && <VersionInfo version={config.VERSION} /> */}
           
         </Container>
       </ThemeProvider>

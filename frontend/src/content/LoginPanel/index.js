@@ -89,7 +89,7 @@ const LoginPanel = props => {
     };
 
     let payload = {
-      username: values.username, 
+      usernameOrEmail: values.username, 
       password: values.password
     };
 
@@ -100,14 +100,20 @@ const LoginPanel = props => {
     })
       .then(response => response.json())
       .then(responseData => {
-        if (responseData.status === 'SUCCESS') {
-          props.login({
+        console.log("responseData", responseData);
+        if (responseData.message === 'Login successful') {
+          window.sessionStorage.clear();
+          window.localStorage.clear(); 
+          const object = {
             message: responseData.message,
             role: responseData.role,
             sub_role: responseData.sub_role,
             user_id: responseData.user_id,
-            username:responseData.username,
-          });
+            username: responseData.username,
+            timestamp: new Date().getTime()
+          };
+          loginToken.current = object;
+          setNotification({ state: true, message: responseData.message });
         } else {
           setNotification({ state: true, message: responseData.message || 'Login failed' });
           setWarning('INVALID');
