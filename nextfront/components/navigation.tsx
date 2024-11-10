@@ -2,14 +2,38 @@
 
 import { Bell, LayoutDashboard, LogOut, Settings, Ticket } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Navigation() {
   const pathname = usePathname();
+  const router = useRouter();
+  const { toast } = useToast();
   
   const isActive = (path: string) => pathname === path;
+
+  const handleLogout = async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/logout`, {
+        method: "POST",
+        credentials: "include",
+      });
+
+      router.push("/login");
+      toast({
+        title: "Logged out",
+        description: "You have been successfully logged out.",
+      });
+    } catch (error) {
+      router.push("/login");
+      toast({
+        title: "Logged out",
+        description: "You have been logged out.",
+      });
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
@@ -48,7 +72,7 @@ export default function Navigation() {
           <Button variant="ghost" size="icon">
             <Settings className="h-5 w-5 text-[#6D838F]" />
           </Button>
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" onClick={handleLogout}>
             <LogOut className="h-5 w-5 text-[#6D838F]" />
           </Button>
         </div>
