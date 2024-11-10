@@ -7,6 +7,8 @@ from . import crud, models, schemas
 from .database import engine, get_db
 from .ensure_schema import ensure_schema
 from contextlib import asynccontextmanager
+from openai import OpenAI
+import os
 
 
 @asynccontextmanager
@@ -19,7 +21,7 @@ app = FastAPI(lifespan=lifespan)
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
+    allow_origins=["http://localhost:3000"],  # Replace * with your frontend URL
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
@@ -27,6 +29,8 @@ app.add_middleware(
 
 # Ensure the database tables are created
 models.Base.metadata.create_all(bind=engine)
+
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 
 @app.get("/tickets/{ticket_id}", response_model=schemas.Ticket)
@@ -331,3 +335,45 @@ async def logout():
     Returns a success message.
     """
     return {"message": "Logged out successfully"}
+
+
+@app.post("/chat")
+async def chat(
+    user_question: str = Body(..., embed=True),
+    db: Session = Depends(get_db)
+):
+    tickets = crud.get_tickets(db, skip=0, limit=10)
+    
+    # Convert tickets to a list of dictionaries using your model's actual fields
+    ticket_data = [
+        {
+            "ticket_id": ticket.ticket_id,
+            "ticket_title": ticket.ticket_title,
+            "description": ticket.description,
+            "state": ticket.state,
+            "priority": ticket.priority,
+            "functional_area": ticket.functional_area,
+            "impact": ticket.impact,
+            "raised_date": ticket.raised_date.isoformat() if ticket.raised_date else None
+        } for ticket in tickets
+    ]
+    
+    print(ticket_data)
+    
+    completion = client.chat.completions.create(
+        model="gpt-4-0125-preview",
+        messages=[
+            {
+                "role": "system",
+                "content": f"You are a helpful support assistant for our platform. Provide professional and friendly responses without revealing internal system details or implementation strategies. Focus on being helpful while maintaining appropriate confidentiality. Here are the recent tickets: {ticket_data}"
+            },
+            {
+                "role": "user",
+                "content": user_question
+            }
+        ],
+        temperature=0.7,
+        max_tokens=500
+    )
+    
+    return {"response": completion.choices[0].message.content}
