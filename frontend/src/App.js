@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Ticket from "./Ticket";
 import { v4 as uuidv4 } from "uuid";
@@ -9,10 +9,9 @@ const App = () => {
   const [newTicketDescription, setNewTicketDescription] = useState("");
   const [notifications, setNotifications] = useState([]);
   const [sortOrder, setSortOrder] = useState("latest");
-  const [filter, setFilter] = useState("all"); // Filter state: 'all', 'myTickets', 'underway', 'completed'
-  const [nextId, setNextId] = useState(1); // Counter for sequential IDs
-
-  // Generate a unique sessionId for the user (simulating user identification)
+  const [filter, setFilter] = useState("all");
+  const [nextId, setNextId] = useState(1);
+  const [commentsVisibility, setCommentsVisibility] = useState({});
   const [sessionId] = useState(() => {
     const storedSessionId = localStorage.getItem("sessionId");
     if (storedSessionId) return storedSessionId;
@@ -24,18 +23,21 @@ const App = () => {
   const createTicket = () => {
     if (newTicketTitle && newTicketDescription) {
       const newTicket = {
-        id: nextId, // Use the next available sequential ID
+        id: nextId,
         title: newTicketTitle,
         description: newTicketDescription,
         comments: [],
-        status: "Underway",
-        createdAt: new Date(), // This line creates a timestamp
+        status: "Pending",
+        createdAt: new Date(),
         createdBy: sessionId,
       };
       setTickets([newTicket, ...tickets]);
-      setNextId(nextId + 1); // Increment the counter for the next ticket
+      setNextId(nextId + 1);
       setNewTicketTitle("");
       setNewTicketDescription("");
+      triggerNotification(
+        `New ticket "${newTicket.title}" created. Status: Pending.`
+      );
     }
   };
 
@@ -46,7 +48,10 @@ const App = () => {
         if (ticket.createdBy === sessionId) {
           setNotifications([
             ...notifications,
-            `New comment on your ticket "${ticket.title}".`,
+            {
+              message: `New comment on your ticket "${ticket.title}".`,
+              id: uuidv4(),
+            },
           ]);
         }
         return { ...ticket, comments: updatedComments };
@@ -59,12 +64,9 @@ const App = () => {
   const changeStatus = (id, newStatus) => {
     const updatedTickets = tickets.map((ticket) => {
       if (ticket.id === id) {
-        if (ticket.createdBy === sessionId && newStatus === "Completed") {
-          setNotifications([
-            ...notifications,
-            `Your ticket "${ticket.title}" has been marked as completed.`,
-          ]);
-        }
+        triggerNotification(
+          `Ticket "${ticket.title}" status changed to ${newStatus}.`
+        );
         return { ...ticket, status: newStatus };
       }
       return ticket;
@@ -72,7 +74,13 @@ const App = () => {
     setTickets(updatedTickets);
   };
 
-  // Sort tickets based on date (latest or oldest)
+  const triggerNotification = (message) => {
+    setNotifications((prevNotifications) => [
+      ...prevNotifications,
+      { message, id: uuidv4() },
+    ]);
+  };
+
   const sortTickets = (order) => {
     const sortedTickets = [...tickets].sort((a, b) => {
       if (order === "oldest")
@@ -83,23 +91,68 @@ const App = () => {
     setTickets(sortedTickets);
   };
 
-  // Filter tickets based on 'all', 'myTickets', 'underway', or 'completed'
-  const filteredTickets = tickets.filter((ticket) => {
-    if (filter === "myTickets") {
-      return ticket.createdBy === sessionId;
-    }
-    if (filter === "inprogress") {
-      return ticket.status === "In Progress";
-    }
-    if (filter === "completed") {
-      return ticket.status === "Completed";
-    }
-    return true; // Show all tickets if no specific filter
-  });
+  const filteredTickets = tickets
+    .filter((ticket) => {
+      if (filter === "myTickets") {
+        return ticket.createdBy === sessionId;
+      }
+      if (filter === "completed") {
+        return ticket.status === "Completed";
+      }
+      if (filter === "pending") {
+        return ticket.status === "Pending";
+      }
+      if (filter === "received") {
+        return ticket.status === "Received";
+      }
+      if (filter === "rejected") {
+        return ticket.status === "Rejected";
+      }
+      return true;
+    })
+    .sort((a, b) => {
+      if (sortOrder === "oldest")
+        return new Date(a.createdAt) - new Date(b.createdAt);
+      return new Date(b.createdAt) - new Date(a.createdAt);
+    });
+
+  const toggleCommentsVisibility = (id) => {
+    setCommentsVisibility((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
 
   return (
     <div className="app">
       <h1>Ticket Management System</h1>
+      {/* Notifications Section */}
+      {notifications.length > 0 && (
+        <div className="notifications">
+          <h3>Notifications</h3>
+          <ul>
+            {notifications.map((notification) => (
+              <li key={notification.id} className="notification">
+                <span className="notification-icon">🔔</span>
+                <span className="notification-message">
+                  {notification.message}
+                </span>
+                <button
+                  className="notification-close"
+                  onClick={() =>
+                    setNotifications((prev) =>
+                      prev.filter((n) => n.id !== notification.id)
+                    )
+                  }
+                >
+                  X
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <div className="ticket-creation">
         <input
           type="text"
@@ -117,27 +170,21 @@ const App = () => {
 
       <div className="sorting-filtering">
         <div className="sorting">
-          <label>Sort by: </label>
+          <span className="sorting-filtering-label">Sort By:</span>
           <button onClick={() => sortTickets("latest")}>Latest</button>
           <button onClick={() => sortTickets("oldest")}>Oldest</button>
         </div>
         <div className="filtering">
-          <label>Show: </label>
+          <span className="sorting-filtering-label">Filter By:</span>
           <select onChange={(e) => setFilter(e.target.value)} value={filter}>
             <option value="all">All Tickets</option>
             <option value="myTickets">My Tickets</option>
-            <option value="inprogress">In Progress</option>
             <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+            <option value="received">Received</option>
+            <option value="rejected">Rejected</option>
           </select>
         </div>
-      </div>
-
-      <div className="notifications">
-        {notifications.map((note, index) => (
-          <div key={index} className="notification">
-            {note}
-          </div>
-        ))}
       </div>
 
       <div className="tickets-list">
@@ -148,6 +195,8 @@ const App = () => {
             addComment={addComment}
             changeStatus={changeStatus}
             sessionId={sessionId}
+            isCommentsOpen={commentsVisibility[ticket.id]}
+            toggleCommentsVisibility={toggleCommentsVisibility}
           />
         ))}
       </div>
