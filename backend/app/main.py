@@ -322,3 +322,12 @@ def login(
         "role": user.role,
         "sub_role": user.sub_role
     }
+
+
+@app.post("/logout")
+async def logout():
+    """
+    Handle user logout.
+    Returns a success message.
+    """
+    return {"message": "Logged out successfully"}
