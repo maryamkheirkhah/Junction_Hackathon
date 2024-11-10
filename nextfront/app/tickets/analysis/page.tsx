@@ -75,8 +75,9 @@ const keyFactorsDatabase = {
 const getAIAnalysis = (description: string) => {
   const dotCount = (description.match(/\./g) || []).length;
   const baseRate = Math.min(Math.round((dotCount / 10) * 100), 100);
-  const variation = (Math.random() * 6 - 2.1).toFixed(1);
-  const acceptanceRate = Math.min(baseRate + parseFloat(variation), 100);
+  // Limit variation to ensure acceptance rate stays between 0 and 100
+  const variation = Math.min(Math.max((Math.random() * 6 - 2.1), -baseRate), (100 - baseRate));
+  const acceptanceRate = Math.max(0, Math.min(baseRate + parseFloat(variation.toFixed(1)), 100));
   
   // Get the appropriate key factors based on dot count
   const factorIndex = Math.min(Math.max(Math.ceil(dotCount), 1), 10);

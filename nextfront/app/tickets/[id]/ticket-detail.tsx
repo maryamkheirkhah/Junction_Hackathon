@@ -201,7 +201,12 @@ export function TicketDetail({ initialTicket }: TicketDetailProps) {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <ScrollArea className="h-[300px] pr-4">
+          <ScrollArea className={cn(
+            ticket?.comments && ticket.comments.length > 0 
+              ? "h-[300px]" 
+              : "h-[100px]",
+            "pr-4"
+          )}>
             <div className="space-y-4">
               {ticket?.comments && ticket.comments.length > 0 ? (
                 ticket.comments.map((comment) => (
